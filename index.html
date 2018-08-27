@@ -16,7 +16,7 @@ body, html {
 
 
 /* Create a Parallax Effect */
-.bgimg-1, .bgimg-2, .bgimg-3 {
+.bgimg-1, .bgimg-2, .bgimg-3 , .bgimg-4{
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -25,19 +25,25 @@ body, html {
 
 /* First image (Logo. Full height) */
 .bgimg-1 {
-    background-image: url('images/background.jpg');
+    background-image: url('../images/Backgrounds/background.jpg');
     min-height: 100%;
 }
 
-/* Second image (Portfolio) */
+/* Second image (Aktuelles) */
 .bgimg-2 {
-    background-image: url("images/background.jpg");
+    background-image: url("../images/Backgrounds/aktuelles.jpg");
     min-height: 400px;
 }
 
-/* Third image (Contact) */
+/* Third image (Uebungen) */
 .bgimg-3 {
-    background-image: url("images/background.jpg");
+    background-image: url("../images/Backgrounds/uebungen.jpg");
+    min-height: 400px;
+}
+
+/* Fourd image (Einsätze) */
+.bgimg-4 {
+    background-image: url("../images/Backgrounds/einsaetze.jpg");
     min-height: 400px;
 }
 
@@ -46,7 +52,7 @@ body, html {
 
 /* Turn off parallax scrolling for tablets and phones */
 @media only screen and (max-device-width: 1024px) {
-    .bgimg-1, .bgimg-2, .bgimg-3 {
+    .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
         background-attachment: scroll;
     }
 }
@@ -60,9 +66,10 @@ body, html {
       <i class="fa fa-bars"></i>
     </a>
     <a href="#home" class="w3-bar-item w3-button">HOME</a>
-    <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
-    <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
-    <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+    <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> Über uns</a>
+    <a href="#aktuelles" class="w3-bar-item w3-button w3-hide-small"> Aktuelles</a>
+    <a href="#uebung" class="w3-bar-item w3-button w3-hide-small">Übungen</a>
+    <a href="#einsatz" class="w3-bar-item w3-button w3-hide-small"> Einsatz</a>
     <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
       <i class="fa fa-search"></i>
     </a>
@@ -70,9 +77,10 @@ body, html {
 
   <!-- Navbar on small screens -->
   <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
-    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
-    <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
-    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">Über uns</a>
+    <a href="#aktuelles" class="w3-bar-item w3-button" onclick="toggleFunction()">Aktuelles</a>
+    <a href="#uebung" class="w3-bar-item w3-button" onclick="toggleFunction()">Übungen</a>
+    <a href="#einsatz" class="w3-bar-item w3-button" onclick="toggleFunction()">Einsatz</a>
     <a href="#" class="w3-bar-item w3-button">SEARCH</a>
   </div>
 </div>
@@ -88,18 +96,16 @@ body, html {
 <div class="w3-content w3-container w3-padding-64" id="about">
   <h1 class="w3-center">Über uns</h1>
   <p class="w3-center"><em>Wir stellen uns vor</em></p>
-  <p>Die FF Sellrain besteht zu zeit aus 113 Aktiven Feuererhrmännern und Frauen die rund um di Uhr für die Gemeinde Sellrain im Einsatz sind hierbei 
-  wird mit rund 20 Übungen pro Jahr sicher gestellt dass man für den Ernstfall gewapnet ist. Mit viel Übung und guter, häufiger Ausbildung im Dorf und 
-  an der Landesfeuerwehrschule treten wir jeder Herausforderung entgegen</p>
-  
+  <p>Atome sind nicht unteilbar, wie zum Zeitpunkt der Namensgebung angenommen, sondern zeigen einen wohlbestimmten Aufbau aus noch kleineren Teilchen. Sie bestehen aus einem Atomkern und einer Atomhülle. Der Atomkern hat einen Durchmesser von etwa einem Zehn- bis Hunderttausendstel des gesamten Atomdurchmessers, enthält jedoch über 99,9 Prozent der Atommasse. Er besteht aus positiv geladenen Protonen und einer Anzahl von etwa gleich schweren, elektrisch neutralen Neutronen. Diese Nukleonen sind durch die starke Wechselwirkung aneinander gebunden. Die Hülle besteht aus negativ geladenen Elektronen.</p>
 
-  
+
+
    <h3 class="w3-center">Ausschuss der Freiwilligen Feuerwehr Sellrain</h3>
 
 <div class="w3-row-padding w3-margin-top">
   <div class="w3-third">
     <div class="w3-card">
-      <img src="images/background.jpg" style="width:100%">
+      <img src="../images/Ausschuss/default.jpg" style="width:100%">
       <div class="w3-container">
         <h5>Kommandant <br/> Herbert Gritsch</h5>
       </div>
@@ -108,7 +114,7 @@ body, html {
 
   <div class="w3-third">
     <div class="w3-card">
-      <img src="images/background.jpg" style="width:100%">
+      <img src="../images/Ausschuss/default.jpg" style="width:100%">
       <div class="w3-container">
           <h5>Kommandant Stellvertreter <br/>Emanuel Kofler</h5>
       </div>
@@ -117,8 +123,8 @@ body, html {
 
   <div class="w3-third">
     <div class="w3-card">
-      <img src="images/background.jpg" style="width:100%">
-      <div class="Schriftführer Stellvertreter <br/> Woas i nit">
+      <img src="../images/Ausschuss/default.jpg" style="width:100%">
+      <div class="w3-container">
           <h5> Posten <br/> Name</h5>
       </div>
     </div>
@@ -128,7 +134,7 @@ body, html {
 <div class="w3-row-padding w3-margin-top">
   <div class="w3-third">
     <div class="w3-card">
-      <img src="images/background.jpg" style="width:100%">
+      <img src="../images/Ausschuss/default.jpg" style="width:100%">
       <div class="w3-container">
           <h5>Kassier <br/>Chrispoh Gruber</h5>
       </div>
@@ -137,7 +143,7 @@ body, html {
 
   <div class="w3-third">
     <div class="w3-card">
-      <img src="images/background.jpg" style="width:100%">
+      <img src="../images/Ausschuss/default.jpg" style="width:100%">
       <div class="w3-container">
           <h5>Schriftführer <br/>Chrisoph Krüml</h5>
       </div>
@@ -146,20 +152,20 @@ body, html {
 
   <div class="w3-third">
     <div class="w3-card">
-      <img src="images/background.jpg" style="width:100%">
+      <img src="../images/Ausschuss/default.jpg" style="width:100%">
       <div class="w3-container">
           <h5>Kassier Stellvertreter <br/> Auch jemand</h5>
       </div>
     </div>
   </div>
 </div>
-  
-  
+
+
 
 </div>
 
 <!-- Second Parallax Image with Portfolio Text -->
-<div class="bgimg-2 w3-display-container w3-opacity-min">
+<div class="bgimg-2 w3-display-container w3-opacity-min" id="aktuelles">
   <div class="w3-display-middle">
     <span class="w3-xxlarge w3-text-white w3-wide">AKTUELLES</span>
   </div>
@@ -171,16 +177,16 @@ body, html {
 <div class="w3-row-padding w3-margin-top">
   <div class="w3-third">
     <div class="w3-card">
-      <img src="images/background.jpg" style="width:100%">
+      <a href="seites/Aktuelles/aktuelles.html"> <img src="../images/MainBerichte/loeschtraining.jpg" style="width:100%"></a>
       <div class="w3-container">
-        <h5>Wildsau staffes 2018</h5>
+        <h5>Löschtraining 2018</h5>
       </div>
     </div>
   </div>
 
   <div class="w3-third">
     <div class="w3-card">
-      <img src="images/background.jpg" style="width:100%">
+      <img src="../images/MainBerichte/loeschtraining.jpg" style="width:100%">
       <div class="w3-container">
           <h5>Kurioaser Fund beim Sellrainer Dorfputz</h5>
       </div>
@@ -189,24 +195,18 @@ body, html {
 
   <div class="w3-third">
     <div class="w3-card">
-      <img src="images/background.jpg" style="width:100%">
-      <div class="Schriftführer Stellvertreter <br/> Woas i nit">
+      <img src="../images/MainBerichte/loeschtraining.jpg" style="width:100%">
+      <div class="w3-container">
           <h5>Wir haben eine neues Auto</h5>
       </div>
     </div>
   </div>
-</div> 
+</div>
 
 </div>
 
-
-
-
-
-
-
 <!-- 3rd Parallax Image with Portfolio Text -->
-<div class="bgimg-2 w3-display-container w3-opacity-min">
+<div class="bgimg-3 w3-display-container w3-opacity-min" id="uebung">
   <div class="w3-display-middle">
     <span class="w3-xxlarge w3-text-white w3-wide">ÜBUNGEN</span>
   </div>
@@ -217,7 +217,7 @@ body, html {
 <div class="w3-row-padding w3-margin-top">
   <div class="w3-third">
     <div class="w3-card">
-      <img src="images/background.jpg" style="width:100%">
+      <a href="seites/Uebungen/uebungen.html"> <img src="../images/MainBerichte/loeschtraining.jpg" style="width:100%"></a>
       <div class="w3-container">
         <h5>Wildsau staffes 2018</h5>
       </div>
@@ -226,7 +226,7 @@ body, html {
 
   <div class="w3-third">
     <div class="w3-card">
-      <img src="images/background.jpg" style="width:100%">
+      <img src="../images/MainBerichte/loeschtraining.jpg" style="width:100%">
       <div class="w3-container">
           <h5>Kurioaser Fund beim Sellrainer Dorfputz</h5>
       </div>
@@ -235,26 +235,18 @@ body, html {
 
   <div class="w3-third">
     <div class="w3-card">
-      <img src="images/background.jpg" style="width:100%">
-      <div class="Schriftführer Stellvertreter <br/> Woas i nit">
+      <img src="../images/MainBerichte/loeschtraining.jpg" style="width:100%">
+      <div class="w3-container">
           <h5>Wir haben eine neues Auto</h5>
       </div>
     </div>
   </div>
-</div> 
+</div>
 
 </div>
 
-
-
-
-
-
-
-
-
 <!-- 4th Parallax Image with Portfolio Text -->
-<div class="bgimg-2 w3-display-container w3-opacity-min">
+<div class="bgimg-4 w3-display-container w3-opacity-min" id="einsatz">
   <div class="w3-display-middle">
     <span class="w3-xxlarge w3-text-white w3-wide">EINSÄTZE</span>
   </div>
@@ -266,7 +258,7 @@ body, html {
 <div class="w3-row-padding w3-margin-top">
   <div class="w3-third">
     <div class="w3-card">
-      <img src="images/background.jpg" style="width:100%">
+      <a href="seites/Einsatz/einsatz.html"> <img src="../images/MainBerichte/loeschtraining.jpg" style="width:100%"></a>
       <div class="w3-container">
         <h5>Wildsau staffes 2018</h5>
       </div>
@@ -275,7 +267,7 @@ body, html {
 
   <div class="w3-third">
     <div class="w3-card">
-      <img src="images/background.jpg" style="width:100%">
+      <img src="../images/MainBerichte/loeschtraining.jpg" style="width:100%">
       <div class="w3-container">
           <h5>Kurioaser Fund beim Sellrainer Dorfputz</h5>
       </div>
@@ -284,27 +276,14 @@ body, html {
 
   <div class="w3-third">
     <div class="w3-card">
-      <img src="images/background.jpg" style="width:100%">
-      <div class="Schriftführer Stellvertreter <br/> Woas i nit">
+      <img src="../images/MainBerichte/loeschtraining.jpg" style="width:100%">
+      <div class="w3-container">
           <h5>Wir haben eine neues Auto</h5>
       </div>
     </div>
   </div>
-</div> 
-
 </div>
 
-
-
-
-
-
-
-
-
-<!-- Footer -->
-<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
-  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
-</footer>
+</div>
 </body>
 </html>
