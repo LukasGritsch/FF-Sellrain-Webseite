@@ -56,7 +56,17 @@ body, html {
         background-attachment: scroll;
     }
 }
+div#title{
+  padding-left: 33%;
+  padding-top: 45%;
+}
+
+#inBlock{
+  display: inline-block;
+  margin-left: 11%;
+}
 </style>
+
 <body>
 
 <!-- Navbar (sit on top) -->
@@ -70,10 +80,10 @@ body, html {
     <a href="#aktuelles" class="w3-bar-item w3-button w3-hide-small"> Aktuelles</a>
     <a href="#uebung" class="w3-bar-item w3-button w3-hide-small">Übungen</a>
     <a href="#einsatz" class="w3-bar-item w3-button w3-hide-small"> Einsatz</a>
-    <a href="/home/lukas/git/FF-Sellrain-Webseite/Archive.html" class="w3-bar-item w3-button w3-hide-small"> Archive</a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+    <a href="./Archive.html" class="w3-bar-item w3-button w3-hide-small"> Archive</a>
+    <!--<a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
       <i class="fa fa-search"></i>
-    </a>
+    </a>-->
   </div>
 
   <!-- Navbar on small screens -->
@@ -82,14 +92,14 @@ body, html {
     <a href="#aktuelles" class="w3-bar-item w3-button" onclick="toggleFunction()">Aktuelles</a>
     <a href="#uebung" class="w3-bar-item w3-button" onclick="toggleFunction()">Übungen</a>
     <a href="#einsatz" class="w3-bar-item w3-button" onclick="toggleFunction()">Einsatz</a>
-    <a href="#" class="w3-bar-item w3-button">SEARCH</a>
+    <!--<a href="#" class="w3-bar-item w3-button">SEARCH</a>-->
   </div>
 </div>
 
 <!-- First Parallax Image with Logo Text -->
 <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
-  <div class="w3-display-middle" style="white-space:nowrap;">
-    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">FF <span class="w3-hide-small">-</span> SELLRAIN</span>
+  <div id="title" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">Freiwillige Feuerwehr Sellrain</span>
   </div>
 </div>
 
@@ -99,21 +109,18 @@ body, html {
   <p class="w3-center"><em>Wir stellen uns vor</em></p>
   <p>Atome sind nicht unteilbar, wie zum Zeitpunkt der Namensgebung angenommen, sondern zeigen einen wohlbestimmten Aufbau aus noch kleineren Teilchen. Sie bestehen aus einem Atomkern und einer Atomhülle. Der Atomkern hat einen Durchmesser von etwa einem Zehn- bis Hunderttausendstel des gesamten Atomdurchmessers, enthält jedoch über 99,9 Prozent der Atommasse. Er besteht aus positiv geladenen Protonen und einer Anzahl von etwa gleich schweren, elektrisch neutralen Neutronen. Diese Nukleonen sind durch die starke Wechselwirkung aneinander gebunden. Die Hülle besteht aus negativ geladenen Elektronen.</p>
 
+ <h3 class="w3-center">Kommando</h3>
 
-
-   <h3 class="w3-center">Ausschuss der Freiwilligen Feuerwehr Sellrain</h3>
-
-<div class="w3-row-padding w3-margin-top">
-  <div class="w3-third">
+  <div id="inBlock" class="w3-third">
     <div class="w3-card">
       <img src="../images/Ausschuss/default.jpg" style="width:100%">
       <div class="w3-container">
-        <h5>Kommandant <br/></h5>
+        <h5>Kommandant<br/></h5>
       </div>
     </div>
   </div>
 
-  <div class="w3-third">
+  <div id="inBlock" class="w3-third">
     <div class="w3-card">
       <img src="../images/Ausschuss/default.jpg" style="width:100%">
       <div class="w3-container">
@@ -122,47 +129,73 @@ body, html {
     </div>
   </div>
 
-  <div class="w3-third">
+  <div id="inBlock" class="w3-third">
     <div class="w3-card">
       <img src="../images/Ausschuss/default.jpg" style="width:100%">
       <div class="w3-container">
-          <h5>Schriftführer </br></h5>
+        <h5>Schriftführer<br/></h5>
+      </div>
+    </div>
+  </div>
+
+  <div id="inBlock" class="w3-third">
+    <div class="w3-card">
+      <img src="../images/Ausschuss/default.jpg" style="width:100%">
+      <div class="w3-container">
+          <h5>Kassier<br/></h5>
       </div>
     </div>
   </div>
 </div>
 
-<div class="w3-row-padding w3-margin-top">
-  <div class="w3-third">
-    <div class="w3-card">
-      <img src="../images/Ausschuss/default.jpg" style="width:100%">
-      <div class="w3-container">
-          <h5> Schriftführer Stellvertreter <br/> </h5>
-      </div>
-    </div>
-  </div>
+<div class="w3-content w3-container w3-padding-64" id="about">
+  <h3 class="w3-center">Ausschuss</h3>
 
-  <div class="w3-third">
-    <div class="w3-card">
-      <img src="../images/Ausschuss/default.jpg" style="width:100%">
-      <div class="w3-container">
-          <h5>Kassier <br/></h5>
-      </div>
-    </div>
-  </div>
+   <div id="inBlock" class="w3-third">
+     <div class="w3-card">
+       <img src="../images/Ausschuss/default.jpg" style="width:100%">
+       <div class="w3-container">
+         <h5><br/></h5>
+       </div>
+     </div>
+   </div>
 
-  <div class="w3-third">
-    <div class="w3-card">
-      <img src="../images/Ausschuss/default.jpg" style="width:100%">
-      <div class="w3-container">
-          <h5>Kassier Stellvertreter <br/></h5>
-      </div>
-    </div>
-  </div>
+   <div id="inBlock" class="w3-third">
+     <div class="w3-card">
+       <img src="../images/Ausschuss/default.jpg" style="width:100%">
+       <div class="w3-container">
+           <h5><br/></h5>
+       </div>
+     </div>
+   </div>
+
+   <div id="inBlock" class="w3-third">
+     <div class="w3-card">
+       <img src="../images/Ausschuss/default.jpg" style="width:100%">
+       <div class="w3-container">
+         <h5><br/></h5>
+       </div>
+     </div>
+   </div>
+
+   <div id="inBlock" class="w3-third">
+     <div class="w3-card">
+       <img src="../images/Ausschuss/default.jpg" style="width:100%">
+       <div class="w3-container">
+           <h5><br/></h5>
+       </div>
+     </div>
+   </div>
 </div>
 
-
-
+<div class="w3-content w3-container w3-padding-64" id="about">
+   <h3 class="w3-center">Mannschaft</h3>
+      <div class="w3-card">
+        <img src="../images/Backgrounds/background.jpg" style="width:100%">
+        <div class="w3-container">
+          <h5>Bild unserer Mannschaft<br/></h5>
+        </div>
+      </div>
 </div>
 
 <!-- Second Parallax Image with Portfolio Text -->
