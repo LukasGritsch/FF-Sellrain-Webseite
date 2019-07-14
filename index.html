@@ -55,10 +55,10 @@ body, html {
     .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
         background-attachment: scroll;
     }
-}
-div#title{
-  padding-left: 33%;
-  padding-top: 45%;
+
+    div#title {
+    font-size: 80px;
+  }
 }
 
 #inBlock{
@@ -72,12 +72,22 @@ div#myNavbar{
 </style>
 
 <script>
-function myFunction() {
+function festAlert() {
   alert("Sommernachtsfest der Freiwilligen Feuerwehr Sellrain, am Samstag den 10. August beim Feuerwehrhaus in Sellrain !");
 }
+
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+
 </script>
 
-<body onload="myFunction()">
+<body onload="festAlert()">
 
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
@@ -86,128 +96,26 @@ function myFunction() {
       <i class="fa fa-bars"></i>
     </a>
     <a href="#home" class="w3-bar-item w3-button">Home</a>
-    <!--<a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="w3-bar-item w3-button w3-hide-small"></i> Über uns</a>-->
     <a href="#einsatz" class="w3-bar-item w3-button w3-hide-small"> Eins&aumltze</a>
     <a href="#uebung" class="w3-bar-item w3-button w3-hide-small">&Uumlbungen</a>
     <a href="#aktuelles" class="w3-bar-item w3-button w3-hide-small">Aktuelles</a>
-    <!--<a href="#link" class="w3-bar-item w3-button w3-hide-small"> Links</a>-->
-    <!--<a href="./Archive.html" class="w3-bar-item w3-button w3-hide-small"> Archiv</a>-->
-    <!--<a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
-      <i class="fa fa-search"></i>
-    </a>-->
   </div>
 
   <!-- Navbar on small screens -->
   <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
-    <!--<a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">Über uns</a>-->
     <a href="#aktuelles" class="w3-bar-item w3-button" onclick="toggleFunction()">Aktuelles</a>
     <a href="#uebung" class="w3-bar-item w3-button" onclick="toggleFunction()">&Uumlbungen</a>
     <a href="#einsatz" class="w3-bar-item w3-button" onclick="toggleFunction()">Einsatz</a>
-    <!--<a href="#" class="w3-bar-item w3-button">SEARCH</a>-->
   </div>
 </div>
 
 <!-- First Parallax Image with Logo Text -->
+<!-- First Parallax Image with Logo Text -->
 <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
-  <div id="title" style="white-space:nowrap;">
-    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">Freiwillige Feuerwehr Sellrain</span>
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">FF-Sellrain</span>
   </div>
 </div>
-
-<!-- Container (About Section)
-<div class="w3-content w3-container w3-padding-64" id="about">
-  <h1 class="w3-center">Über uns</h1>
-  <p class="w3-center"><em>Wir stellen uns vor</em></p>
-  <p>Atome sind nicht unteilbar, wie zum Zeitpunkt der Namensgebung angenommen, sondern zeigen einen wohlbestimmten Aufbau aus noch kleineren Teilchen. Sie bestehen aus einem Atomkern und einer Atomhülle. Der Atomkern hat einen Durchmesser von etwa einem Zehn- bis Hunderttausendstel des gesamten Atomdurchmessers, enthält jedoch über 99,9 Prozent der Atommasse. Er besteht aus positiv geladenen Protonen und einer Anzahl von etwa gleich schweren, elektrisch neutralen Neutronen. Diese Nukleonen sind durch die starke Wechselwirkung aneinander gebunden. Die Hülle besteht aus negativ geladenen Elektronen.</p>
-
- <h3 class="w3-center">Kommando</h3>
-
-  <div id="inBlock" class="w3-third">
-    <div class="w3-card">
-      <img src="../images/Ausschuss/default.jpg" style="width:100%">
-      <div class="w3-container">
-        <h5>Kommandant<br/></h5>
-      </div>
-    </div>
-  </div>
-
-  <div id="inBlock" class="w3-third">
-    <div class="w3-card">
-      <img src="../images/Ausschuss/default.jpg" style="width:100%">
-      <div class="w3-container">
-          <h5>Kommandant Stellvertreter <br/></h5>
-      </div>
-    </div>
-  </div>
-
-  <div id="inBlock" class="w3-third">
-    <div class="w3-card">
-      <img src="../images/Ausschuss/default.jpg" style="width:100%">
-      <div class="w3-container">
-        <h5>Schriftführer<br/></h5>
-      </div>
-    </div>
-  </div>
-
-  <div id="inBlock" class="w3-third">
-    <div class="w3-card">
-      <img src="../images/Ausschuss/default.jpg" style="width:100%">
-      <div class="w3-container">
-          <h5>Kassier<br/></h5>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="w3-content w3-container w3-padding-64" id="about">
-  <h3 class="w3-center">Ausschuss</h3>
-
-   <div id="inBlock" class="w3-third">
-     <div class="w3-card">
-       <img src="../images/Ausschuss/default.jpg" style="width:100%">
-       <div class="w3-container">
-         <h5><br/></h5>
-       </div>
-     </div>
-   </div>
-
-   <div id="inBlock" class="w3-third">
-     <div class="w3-card">
-       <img src="../images/Ausschuss/default.jpg" style="width:100%">
-       <div class="w3-container">
-           <h5><br/></h5>
-       </div>
-     </div>
-   </div>
-
-   <div id="inBlock" class="w3-third">
-     <div class="w3-card">
-       <img src="../images/Ausschuss/default.jpg" style="width:100%">
-       <div class="w3-container">
-         <h5><br/></h5>
-       </div>
-     </div>
-   </div>
-
-   <div id="inBlock" class="w3-third">
-     <div class="w3-card">
-       <img src="../images/Ausschuss/default.jpg" style="width:100%">
-       <div class="w3-container">
-           <h5><br/></h5>
-       </div>
-     </div>
-   </div>
-</div>
-
-<div class="w3-content w3-container w3-padding-64" id="about">
-   <h3 class="w3-center">Mannschaft</h3>
-      <div class="w3-card">
-        <img src="../images/Backgrounds/background1.jpg" style="width:100%">
-        <div class="w3-container">
-          <h5>Bild unserer Mannschaft<br/></h5>
-        </div>
-      </div>
-</div>-->
 
 <!-- 4th Parallax Image with Portfolio Text -->
 <div class="bgimg-4 w3-display-container w3-opacity-min" id="einsatz">
@@ -330,47 +238,6 @@ function myFunction() {
 </div>
 
 </div>
-<!--
-<div class="bgimg-2 w3-display-container w3-opacity-min" id="link">
-  <div class="w3-display-middle">
-    <span class="w3-xxlarge w3-text-white w3-wide">LINKS</span>
-  </div>
-</div>
-
-
-<div>
-
-<div class="w3-row-padding w3-margin-top">
-  <div class="w3-third">
-    <div class="w3-card">
-      <a href="http://www.sellrain.tirol.gv.at/"> <img src="../images/MainBerichte/Links/sellrain.png" style="width:100%"></a>
-      <div class="w3-container">
-        <h5>Gemeinde Sellrain</h5>
-      </div>
-    </div>
-  </div>
-
-  <div class="w3-third">
-    <div class="w3-card">
-      <a href="https://www.feuerwehr.tirol/"><img src="../images/MainBerichte/Links/lfv.png" style="width:100%"></a>
-      <div class="w3-container">
-          <h5>Landesfeuerwehrverband</h5>
-      </div>
-    </div>
-  </div>
-
-  <div class="w3-third">
-    <div class="w3-card">
-      <a href="https://www.bfv-ibk-land.at/"><img src="../images/MainBerichte/Links/bfv.png" style="width:100%"></a>
-      <div class="w3-container">
-          <h5>Bezirksfeuerwehrverband</h5>
-      </div>
-    </div>
-  </div>
-</div>
-
-</div>-->
-
 
 </body>
 </html>
