@@ -7,7 +7,23 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <style>
 body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+
+table, td, th {
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  padding: 15px;
+}
+
 </style>
+
 <body class="w3-light-grey">
 
 <!-- w3-content defines a container for fixed size centered content,
@@ -62,14 +78,21 @@ and is wrapped around the whole page content, except for the footer in this exam
 
   <!-- Blog entry -->
   <div class="w3-card-4 w3-margin w3-white"id="3">
-  <img src="geburtstagMax.jpg" alt="Norway" style="width:100%">
+
+    <div class="w3-content w3-display-container">
+    <img class="mySlides" src="sellrain1.jpg" style="width:100%">
+    <img class="mySlides" src="sellrain2.jpg" style="width:100%">
+    <img class="mySlides" src="sellrain3.jpg" style="width:100%">
+
+    <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+    <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+    </div>
     <div class="w3-container">
-      <h3><b>Besuch unseres Ehrenmitgliedes</b></h3>
-      <h5><span class="w3-opacity"></span></h5>
+      <h3><b>Teilnahme beim Abschnittsbeweb in Flaurling</b></h3>
+      <h5>[Quelle: BI Thomas Hagele und BI Hans R&oumldlach &OumlA AB Telfs ]<span class="w3-opacity"></span></h5>
     </div>
 
     <div class="w3-container">
-      <p>Eine Abordnung besuchte unser Ehrenmitglied Max im Wohnheim.</p>
       <div class="w3-row">
         <div class="w3-col m8 s12">
         </div>
@@ -77,6 +100,28 @@ and is wrapped around the whole page content, except for the footer in this exam
         </div>
       </div>
     </div>
+    <script>
+    var slideIndex = 1;
+    showDivs(slideIndex);
+
+    function plusDivs(n) {
+      showDivs(slideIndex += n);
+    }
+
+    function showDivs(n) {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      if (n > x.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = x.length}
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      x[slideIndex-1].style.display = "block";
+    }
+
+    </script>
+
+
   </div>
 <!-- END BLOG ENTRIES -->
 </div>

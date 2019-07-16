@@ -84,7 +84,6 @@ function toggleFunction() {
         x.className = x.className.replace(" w3-show", "");
     }
 }
-
 </script>
 
 <body onload="festAlert()">
@@ -228,16 +227,42 @@ function toggleFunction() {
   </div>
 
   <div class="w3-third">
-    <div class="w3-card">
-      <a href="seites/Aktuelles/aktuelles.html#3"><img src="seites/Aktuelles/geburtstagMax.jpg" style="width:100%"></a>
-      <div class="w3-container">
-          <h5>Besuch unseres Ehrenmitgliedes</h5>
+  <div class="w3-card">
+      <div class="w3-content w3-display-container">
+      <a href="seites/Aktuelles/aktuelles.html#3"><img class="mySlides" src="seites/Aktuelles/sellrain1.jpg" style="width:100%"></a>
+      <a href="seites/Aktuelles/aktuelles.html#3"><img class="mySlides" src="seites/Aktuelles/sellrain2.jpg" style="width:100%"></a>
+      <a href="seites/Aktuelles/aktuelles.html#3"><img class="mySlides" src="seites/Aktuelles/sellrain3.jpg" style="width:100%"></a>
+
+      <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+      <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
       </div>
+</div>
+
+      <div class="w3-container">
+          <h5>Teilnahme beim Abschnittsbeweb in Flaurling [Quelle: BI Thomas Hagele und BI Hans R&oumldlach &OumlA AB Telfs ]</h5>
+      </div>
+      <script>
+      var slideIndex = 1;
+      showDivs(slideIndex);
+
+      function plusDivs(n) {
+        showDivs(slideIndex += n);
+      }
+
+      function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        if (n > x.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = x.length}
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        x[slideIndex-1].style.display = "block";
+      }
+      </script>
     </div>
   </div>
 </div>
-
 </div>
-
 </body>
 </html>
