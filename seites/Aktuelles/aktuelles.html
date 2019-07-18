@@ -40,12 +40,12 @@ and is wrapped around the whole page content, except for the footer in this exam
   <div class="w3-card-4 w3-margin w3-white"id="1">
 
     <div class="w3-content w3-display-container">
-    <img class="mySlides" src="sellrain1.jpg" style="width:100%">
-    <img class="mySlides" src="sellrain2.jpg" style="width:100%">
-    <img class="mySlides" src="sellrain3.jpg" style="width:100%">
+    <img class="aktuelles1" src="sellrain1.jpg" style="width:100%">
+    <img class="aktuelles1" src="sellrain2.jpg" style="width:100%">
+    <img class="aktuelles1" src="sellrain3.jpg" style="width:100%">
 
-    <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-    <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+    <button class="w3-button w3-black w3-display-left" onclick="plusAktuelles1(-1)">&#10094;</button>
+    <button class="w3-button w3-black w3-display-right" onclick="plusAktuelles1(1)">&#10095;</button>
     </div>
     <div class="w3-container">
       <h3><b>Teilnahme beim Abschnittsbeweb in Flaurling</b></h3>
@@ -62,15 +62,15 @@ and is wrapped around the whole page content, except for the footer in this exam
     </div>
     <script>
     var slideIndex = 1;
-    showDivs(slideIndex);
+    showAktuelles1(slideIndex);
 
-    function plusDivs(n) {
-      showDivs(slideIndex += n);
+    function plusAktuelles1(n) {
+      showAktuelles1(slideIndex += n);
     }
 
-    function showDivs(n) {
+    function showAktuelles1(n) {
       var i;
-      var x = document.getElementsByClassName("mySlides");
+      var x = document.getElementsByClassName("aktuelles1");
       if (n > x.length) {slideIndex = 1}
       if (n < 1) {slideIndex = x.length}
       for (i = 0; i < x.length; i++) {
@@ -78,10 +78,7 @@ and is wrapped around the whole page content, except for the footer in this exam
       }
       x[slideIndex-1].style.display = "block";
     }
-
     </script>
-
-
   </div>
 <!-- END BLOG ENTRIES -->
 

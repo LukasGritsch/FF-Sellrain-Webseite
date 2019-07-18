@@ -20,7 +20,75 @@ and is wrapped around the whole page content, except for the footer in this exam
 <!-- Blog entries -->
 <div class="w3-col l8 s12">
   <!-- Blog entry -->
-  <div class="w3-card-4 w3-margin w3-white" id="1">
+
+<!--  <div class="w3-card-4 w3-margin w3-white"id="1">
+  <img src="brand1.jpg" alt="Norway" style="width:100%">
+    <div class="w3-container">
+      <h3><b>Person abgestürzt</b></h3>
+      <h5><span class="w3-opacity">Mittwoch 17 Juli 2019</span></h5>
+    </div>
+
+    <div class="w3-container">
+      <p>Am 17.07.2019 um 17:25 Uhr heulten die Sirenen in Sellrain . Eine 80jährige Gemeindebürgerin ist Nahe ihrem Haus über den steilen Abhang ca. 50 m abgestürzt und kam am Bachbett der Melach zum Liegen.
+         Alle sofort eingeleiteten Hilfsmaßnahmen waren vergebens. Der Notarzt konnte nur mehr den Tod feststellen. </p>
+      <div class="w3-row">
+        <div class="w3-col m8 s12">
+        </div>
+        <div class="w3-col m4 w3-hide-small">
+        </div>
+      </div>
+    </div>
+  </div>-->
+
+  <div class="w3-card-4 w3-margin w3-white"id="1">
+
+    <div class="w3-content w3-display-container">
+    <img class="einsatz1" src="personAbsturz1.jpg" style="width:100%">
+    <img class="einsatz1" src="personAbsturz2.jpg" style="width:100%">
+    <img class="einsatz1" src="personAbsturz3.jpg" style="width:100%">
+
+    <button class="w3-button w3-black w3-display-left" onclick="plusEinsatz1(-1)">&#10094;</button>
+    <button class="w3-button w3-black w3-display-right" onclick="plusEinsatz1(1)">&#10095;</button>
+    </div>
+    <div class="w3-container">
+      <h3><b>Person abgest&uumlrzt</b></h3>
+      <h5><span class="w3-opacity">Mittwoch 17 Juli 2019</span></h5>
+    </div>
+
+    <div class="w3-container">
+      <p>Am 17.07.2019 um 17:25 Uhr heulten die Sirenen in Sellrain . Eine 80-j&aumlhrige Gemeindeb&uumlrgerin ist Nahe ihrem Haus &uumlber den steilen Abhang ca. 50 m abgest&uumlrzt und kam am Bachbett der Melach zum Liegen.
+         Alle sofort eingeleiteten Hilfsma&szlignahmen waren vergebens. Der Notarzt konnte nur mehr den Tod feststellen. </p>
+      <div class="w3-row">
+        <div class="w3-col m8 s12">
+        </div>
+        <div class="w3-col m4 w3-hide-small">
+        </div>
+      </div>
+    </div>
+    <script>
+    var slideIndex = 1;
+    showEinsatz1(slideIndex);
+
+    function plusEinsatz1(n) {
+      showEinsatz1(slideIndex += n);
+    }
+
+    function showEinsatz1(n) {
+      var i;
+      var x = document.getElementsByClassName("einsatz1");
+      if (n > x.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = x.length}
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      x[slideIndex-1].style.display = "block";
+    }
+    </script>
+  </div>
+
+
+
+  <div class="w3-card-4 w3-margin w3-white" id="2">
   <img src="BrandSaigisAlm.jpg" alt="Norway" style="width:100%">
     <div class="w3-container">
       <h3><b>Brand im Freien Saigisalm</b></h3>
@@ -43,7 +111,7 @@ and is wrapped around the whole page content, except for the footer in this exam
   <hr>
 
   <!-- Blog entry -->
-  <div class="w3-card-4 w3-margin w3-white"id="2">
+  <div class="w3-card-4 w3-margin w3-white"id="3">
   <img src="keinBild.png" alt="Norway" style="width:100%">
     <div class="w3-container">
       <h3><b>Ertrinkungsunfall im Fotschertal</b></h3>
@@ -66,23 +134,6 @@ and is wrapped around the whole page content, except for the footer in this exam
   <hr>
 
   <!-- Blog entry -->
-  <div class="w3-card-4 w3-margin w3-white"id="3">
-  <img src="brand1.jpg" alt="Norway" style="width:100%">
-    <div class="w3-container">
-      <h3><b>Brandeinsatz</b></h3>
-      <h5><span class="w3-opacity">Montag 15 Oktober 2018</span></h5>
-    </div>
-
-    <div class="w3-container">
-      <p></p>
-      <div class="w3-row">
-        <div class="w3-col m8 s12">
-        </div>
-        <div class="w3-col m4 w3-hide-small">
-        </div>
-      </div>
-    </div>
-  </div>
 <!-- END BLOG ENTRIES -->
 </div>
 

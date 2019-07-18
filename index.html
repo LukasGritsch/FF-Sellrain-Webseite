@@ -127,9 +127,55 @@ function toggleFunction() {
 <div>
 
 <div class="w3-row-padding w3-margin-top">
+
+  <!--<div class="w3-third">
+    <div class="w3-card">
+      <a href="seites/Einsatz/einsatz.html#1"> <img src="seites/Einsatz/personAbsturz1.jpg" style="width:100%"></a>
+      <div class="w3-container">
+          <h5>Person abgest&uumlrzt</h5>
+      </div>
+    </div>
+  </div>-->
+
+  <div class="w3-third">
+  <div class="w3-card">
+      <div class="w3-content w3-display-container">
+      <a href="seites/Einsatz/einsatz.html#1"><img class="einsatz1" src="seites/Einsatz/personAbsturz1.jpg" style="width:100%"></a>
+      <a href="seites/Einsatz/einsatz.html#1"><img class="einsatz1" src="seites/Einsatz/personAbsturz2.jpg" style="width:100%"></a>
+      <a href="seites/Einsatz/einsatz.html#1"><img class="einsatz1" src="seites/Einsatz/personAbsturz3.jpg" style="width:100%"></a>
+
+      <button class="w3-button w3-black w3-display-left" onclick="plusEinsatz1(-1)">&#10094;</button>
+      <button class="w3-button w3-black w3-display-right" onclick="plusEinsatz1(1)">&#10095;</button>
+      </div>
+  </div>
+
+      <div class="w3-container">
+          <h5>Person abgest&uumlrzt</h5>
+      </div>
+      <script>
+      var slideIndex = 1;
+      showEinsatz1(slideIndex);
+
+      function plusEinsatz1(n) {
+        showEinsatz1(slideIndex += n);
+      }
+
+      function showEinsatz1(n) {
+        var i;
+        var x = document.getElementsByClassName("einsatz1");
+        if (n > x.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = x.length}
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        x[slideIndex-1].style.display = "block";
+      }
+      </script>
+    </div>
+
   <div class="w3-third">
     <div class="w3-card">
-      <a href="seites/Einsatz/einsatz.html"> <img src="seites/Einsatz/BrandSaigisAlm.jpg" style="width:100%"></a>
+      <a href="seites/Einsatz/einsatz.html#2"> <img src="seites/Einsatz/BrandSaigisAlm.jpg" style="width:100%"></a>
       <div class="w3-container">
         <h5>Brand im Freien Saigisalm</h5>
       </div>
@@ -138,18 +184,9 @@ function toggleFunction() {
 
   <div class="w3-third">
     <div class="w3-card">
-      <a href="seites/Einsatz/einsatz.html#2"> <img src="seites/Einsatz/keinBild.png" style="width:100%"></a>
+      <a href="seites/Einsatz/einsatz.html#3"> <img src="seites/Einsatz/keinBild.png" style="width:100%"></a>
       <div class="w3-container">
           <h5>Ertrinkungsunfall im Fotschertal</h5>
-      </div>
-    </div>
-  </div>
-
-  <div class="w3-third">
-    <div class="w3-card">
-      <a href="seites/Einsatz/einsatz.html#3"> <img src="seites/Einsatz/brand1.jpg" style="width:100%"></a>
-      <div class="w3-container">
-          <h5>Brandeinsatz</h5>
       </div>
     </div>
   </div>
@@ -212,12 +249,12 @@ function toggleFunction() {
   <div class="w3-third">
   <div class="w3-card">
       <div class="w3-content w3-display-container">
-      <a href="seites/Aktuelles/aktuelles.html#1"><img class="mySlides" src="seites/Aktuelles/sellrain1.jpg" style="width:100%"></a>
-      <a href="seites/Aktuelles/aktuelles.html#1"><img class="mySlides" src="seites/Aktuelles/sellrain2.jpg" style="width:100%"></a>
-      <a href="seites/Aktuelles/aktuelles.html#1"><img class="mySlides" src="seites/Aktuelles/sellrain3.jpg" style="width:100%"></a>
+      <a href="seites/Aktuelles/aktuelles.html#1"><img class="aktuelles1" src="seites/Aktuelles/sellrain1.jpg" style="width:100%"></a>
+      <a href="seites/Aktuelles/aktuelles.html#1"><img class="aktuelles1" src="seites/Aktuelles/sellrain2.jpg" style="width:100%"></a>
+      <a href="seites/Aktuelles/aktuelles.html#1"><img class="aktuelles1" src="seites/Aktuelles/sellrain3.jpg" style="width:100%"></a>
 
-      <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-      <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+      <button class="w3-button w3-black w3-display-left" onclick="plusAktuelles1(-1)">&#10094;</button>
+      <button class="w3-button w3-black w3-display-right" onclick="plusAktuelles1(1)">&#10095;</button>
       </div>
   </div>
 
@@ -226,15 +263,15 @@ function toggleFunction() {
       </div>
       <script>
       var slideIndex = 1;
-      showDivs(slideIndex);
+      showAktuelles1(slideIndex);
 
-      function plusDivs(n) {
-        showDivs(slideIndex += n);
+      function plusAktuelles1(n) {
+        showAktuelles1(slideIndex += n);
       }
 
-      function showDivs(n) {
+      function showAktuelles1(n) {
         var i;
-        var x = document.getElementsByClassName("mySlides");
+        var x = document.getElementsByClassName("aktuelles1");
         if (n > x.length) {slideIndex = 1}
         if (n < 1) {slideIndex = x.length}
         for (i = 0; i < x.length; i++) {
