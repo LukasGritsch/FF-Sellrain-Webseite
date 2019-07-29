@@ -37,19 +37,19 @@ and is wrapped around the whole page content, except for the footer in this exam
 <div class="w3-col l8 s12">
 
   <!-- Blog entry -->
+
   <div class="w3-card-4 w3-margin w3-white"id="1">
 
     <div class="w3-content w3-display-container">
-    <img class="aktuelles1" src="sellrain1.jpg" style="width:100%">
-    <img class="aktuelles1" src="sellrain2.jpg" style="width:100%">
-    <img class="aktuelles1" src="sellrain3.jpg" style="width:100%">
+    <img class="aktuelles1" src="Innernavis.jpg" style="width:100%">
+    <img class="aktuelles1" src="Innernavis1.jpg" style="width:100%">
 
     <button class="w3-button w3-black w3-display-left" onclick="plusAktuelles1(-1)">&#10094;</button>
     <button class="w3-button w3-black w3-display-right" onclick="plusAktuelles1(1)">&#10095;</button>
     </div>
     <div class="w3-container">
-      <h3><b>Teilnahme beim Abschnittsbeweb in Flaurling</b></h3>
-      <h5>[Quelle: BI Thomas Hagele und BI Hans R&oumldlach &OumlA AB Telfs ]<span class="w3-opacity"></span></h5>
+      <h3><b>Teilnahme beim Bezirksbewerb in Innernavis</b></h3>
+      <h5><span class="w3-opacity"></span></h5>
     </div>
 
     <div class="w3-container">
@@ -80,11 +80,55 @@ and is wrapped around the whole page content, except for the footer in this exam
     }
     </script>
   </div>
+
+
+  <div class="w3-card-4 w3-margin w3-white"id="2">
+
+    <div class="w3-content w3-display-container">
+    <img class="aktuelles2" src="sellrain1.jpg" style="width:100%">
+    <img class="aktuelles2" src="sellrain2.jpg" style="width:100%">
+    <img class="aktuelles2" src="sellrain3.jpg" style="width:100%">
+
+    <button class="w3-button w3-black w3-display-left" onclick="plusAktuelles2(-1)">&#10094;</button>
+    <button class="w3-button w3-black w3-display-right" onclick="plusAktuelles2(1)">&#10095;</button>
+    </div>
+    <div class="w3-container">
+      <h3><b>Teilnahme beim Abschnittsbeweb in Flaurling</b></h3>
+      <h5>[Quelle: BI Thomas Hagele und BI Hans R&oumldlach &OumlA AB Telfs ]<span class="w3-opacity"></span></h5>
+    </div>
+
+    <div class="w3-container">
+      <div class="w3-row">
+        <div class="w3-col m8 s12">
+        </div>
+        <div class="w3-col m4 w3-hide-small">
+        </div>
+      </div>
+    </div>
+    <script>
+    var slideIndex = 1;
+    showAktuelles2(slideIndex);
+
+    function plusAktuelles2(n) {
+      showAktuelles2(slideIndex += n);
+    }
+
+    function showAktuelles2(n) {
+      var i;
+      var x = document.getElementsByClassName("aktuelles2");
+      if (n > x.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = x.length}
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      x[slideIndex-1].style.display = "block";
+    }
+    </script>
+  </div>
 <!-- END BLOG ENTRIES -->
 
-
   <!-- Blog entry -->
-  <div class="w3-card-4 w3-margin w3-white"id="2">
+  <div class="w3-card-4 w3-margin w3-white"id="3">
   <img src="FriedenslichtGeld.jpg" alt="Norway" style="width:100%">
     <div class="w3-container" >
       <h3><b>Spende an die Kinderkrebshilfe</b></h3>
@@ -102,28 +146,6 @@ and is wrapped around the whole page content, except for the footer in this exam
     </div>
   </div>
   <hr>
-
-  <!-- Blog entry -->
-  <div class="w3-card-4 w3-margin w3-white"id="3">
-  <img src="BubbleSoccer1.png" alt="Norway" style="width:100%">
-    <div class="w3-container">
-      <h3><b>Teilnahme beim Bubble Soccer</b></h3>
-      <h5><span class="w3-opacity"></span></h5>
-    </div>
-
-    <div class="w3-container">
-      <p>Beim Bubble Soccer des Eishockeyclub (EC) Sellraintal Wolves war auch die FF-Sellrain wieder vertreten.
-        Mit geballtem Einsatz schafften wir es sogar fast ins Finale und vers&aumlumten das Stockerl nur ganz knapp. </p>
-      <div class="w3-row">
-        <div class="w3-col m8 s12">
-        </div>
-        <div class="w3-col m4 w3-hide-small">
-        </div>
-      </div>
-    </div>
-  </div>
-  <hr>
-
 </div>
 
 <!-- Introduction menu -->
