@@ -8,18 +8,23 @@
 <style>
 body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 
-table, td, th {
-  border: 1px solid #ddd;
-  text-align: left;
-}
-
 table {
-  border-collapse: collapse;
   width: 100%;
+  border-collapse: collapse;
 }
-
-th, td {
-  padding: 15px;
+/* Zebra striping */
+tr:nth-of-type(odd) {
+  background: #eee;
+}
+th {
+  background: #333;
+  color: white;
+  font-weight: bold;
+}
+td, th {
+  padding: 6px;
+  border: 1px solid #ccc;
+  text-align: left;
 }
 
 </style>
@@ -49,12 +54,12 @@ and is wrapped around the whole page content, except for the footer in this exam
     </div>
     <div class="w3-container">
       <h3><b>FF SELLRAIN erfolgreichste Feuerwehr beim Nassleistungswettbewerb im Bezirk Innsbruck-Land </b></h3>
-      <h5><span class="w3-opacity"></span></h5>
+      <h5>[Fotos: FF-Sellrain]<span class="w3-opacity"></span></h5>
     </div>
 
     <div class="w3-container">
       <p>Die teilnehmenden Gruppen der FF Sellrain schnitten hervorragend ab und klassifizierten sich vorne in der Rangliste.
-        "Wir sind die einzige Feuerwehr im ganzen Bezirk, die in beiden Klassen das Stockerl erreichte."</p>
+        Herbert Gritsch Kdt. der FF Sellrain: "Wir sind die einzige Feuerwehr im ganzen Bezirk, die in beiden Klassen das Stockerl erreichte."  </p>
       <table>
         <tr>
           <th>Platzierung</th>
@@ -63,12 +68,12 @@ and is wrapped around the whole page content, except for the footer in this exam
         </tr>
         <tr>
           <td>3. Platz</td>
-          <td>A Ohne Alterpunkte</td>
+          <td>A Ohne Alterspunkte</td>
           <td>Sellrain 2 mit 453,35 Pkt. (neun hundertstel hinter Platz 2)</td>
         </tr>
         <tr>
           <td>2. Platz</td>
-          <td>B Mit Alterpunkte</td>
+          <td>B Mit Alterspunkte</td>
           <td>Sellrain 1 mit 453,77 Pkt.</td>
         </tr>
       </table>
