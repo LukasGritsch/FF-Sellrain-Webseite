@@ -249,8 +249,8 @@ function toggleFunction() {
   <div class="w3-third">
   <div class="w3-card">
       <div class="w3-content w3-display-container">
-      <a href="seites/Aktuelles/aktuelles.html#1"><img class="aktuelles1" src="seites/Aktuelles/Innernavis.jpg" style="width:100%"></a>
-      <a href="seites/Aktuelles/aktuelles.html#1"><img class="aktuelles1" src="seites/Aktuelles/Innernavis1.jpg" style="width:100%"></a>
+      <a href="seites/Aktuelles/aktuelles.html#1"><img class="aktuelles1" src="seites/Aktuelles/dorftunier1.jpg" style="width:100%"></a>
+      <a href="seites/Aktuelles/aktuelles.html#1"><img class="aktuelles1" src="seites/Aktuelles/dorftunier.jpg" style="width:100%"></a>
 
       <button class="w3-button w3-black w3-display-left" onclick="plusAktuelles1(-1)">&#10094;</button>
       <button class="w3-button w3-black w3-display-right" onclick="plusAktuelles1(1)">&#10095;</button>
@@ -258,7 +258,7 @@ function toggleFunction() {
   </div>
 
       <div class="w3-container">
-          <h5>FF SELLRAIN erfolgreichste Feuerwehr beim Nassleistungswettbewerb im Bezirk Innsbruck-Land [Fotos: FF-Sellrain]</h5>
+          <h5>Teilnahme am Sellrainer Dorftunier [Fotos: FF-Sellrain]</h5>
       </div>
       <script>
       var slideIndex = 1;
@@ -281,13 +281,11 @@ function toggleFunction() {
       </script>
     </div>
 
-
   <div class="w3-third">
   <div class="w3-card">
       <div class="w3-content w3-display-container">
-      <a href="seites/Aktuelles/aktuelles.html#2"><img class="aktuelles2" src="seites/Aktuelles/sellrain1.jpg" style="width:100%"></a>
-      <a href="seites/Aktuelles/aktuelles.html#2"><img class="aktuelles2" src="seites/Aktuelles/sellrain2.jpg" style="width:100%"></a>
-      <a href="seites/Aktuelles/aktuelles.html#2"><img class="aktuelles2" src="seites/Aktuelles/sellrain3.jpg" style="width:100%"></a>
+      <a href="seites/Aktuelles/aktuelles.html#2"><img class="aktuelles2" src="seites/Aktuelles/Innernavis.jpg" style="width:100%"></a>
+      <a href="seites/Aktuelles/aktuelles.html#2"><img class="aktuelles2" src="seites/Aktuelles/Innernavis1.jpg" style="width:100%"></a>
 
       <button class="w3-button w3-black w3-display-left" onclick="plusAktuelles2(-1)">&#10094;</button>
       <button class="w3-button w3-black w3-display-right" onclick="plusAktuelles2(1)">&#10095;</button>
@@ -295,7 +293,7 @@ function toggleFunction() {
   </div>
 
       <div class="w3-container">
-          <h5>Teilnahme beim Abschnittsbeweb in Flaurling [Quelle: BI Thomas Hagele und BI Hans R&oumldlach &OumlA AB Telfs ]</h5>
+          <h5>FF SELLRAIN erfolgreichste Feuerwehr beim Nassleistungswettbewerb im Bezirk Innsbruck-Land [Fotos: FF-Sellrain]</h5>
       </div>
       <script>
       var slideIndex = 1;
@@ -318,7 +316,44 @@ function toggleFunction() {
       </script>
     </div>
 
-    <div class="w3-third">
+
+  <div class="w3-third">
+  <div class="w3-card">
+      <div class="w3-content w3-display-container">
+      <a href="seites/Aktuelles/aktuelles.html#3"><img class="aktuelles3" src="seites/Aktuelles/sellrain1.jpg" style="width:100%"></a>
+      <a href="seites/Aktuelles/aktuelles.html#3"><img class="aktuelles3" src="seites/Aktuelles/sellrain2.jpg" style="width:100%"></a>
+      <a href="seites/Aktuelles/aktuelles.html#3"><img class="aktuelles3" src="seites/Aktuelles/sellrain3.jpg" style="width:100%"></a>
+
+      <button class="w3-button w3-black w3-display-left" onclick="plusAktuelles3(-1)">&#10094;</button>
+      <button class="w3-button w3-black w3-display-right" onclick="plusAktuelles3(1)">&#10095;</button>
+      </div>
+  </div>
+
+      <div class="w3-container">
+          <h5>Teilnahme beim Abschnittsbeweb in Flaurling [Quelle: BI Thomas Hagele und BI Hans R&oumldlach &OumlA AB Telfs ]</h5>
+      </div>
+      <script>
+      var slideIndex = 1;
+      showAktuelles3(slideIndex);
+
+      function plusAktuelles3(n) {
+        showAktuelles3(slideIndex += n);
+      }
+
+      function showAktuelles3(n) {
+        var i;
+        var x = document.getElementsByClassName("aktuelles3");
+        if (n > x.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = x.length}
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        x[slideIndex-1].style.display = "block";
+      }
+      </script>
+    </div>
+
+    <!--<div class="w3-third">
     <div class="w3-card">
         <div class="w3-content w3-display-container">
         <a href="seites/Aktuelles/aktuelles.html#3"><img class="aktuelles2" src="seites/Aktuelles/FriedenslichtGeld.jpg" style="width:100%"></a>
@@ -327,7 +362,7 @@ function toggleFunction() {
         <div class="w3-container">
             <h5>Spende an die Kinderkrebshilfe [Foto: Manfred Hassl]</h5>
         </div>
-      </div>
+      </div>-->
   </div>
 </div>
 </div>

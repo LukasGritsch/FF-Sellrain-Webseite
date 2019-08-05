@@ -42,15 +42,60 @@ and is wrapped around the whole page content, except for the footer in this exam
 <div class="w3-col l8 s12">
 
   <!-- Blog entry -->
-
   <div class="w3-card-4 w3-margin w3-white"id="1">
 
     <div class="w3-content w3-display-container">
-    <img class="aktuelles1" src="Innernavis.jpg" style="width:100%">
-    <img class="aktuelles1" src="Innernavis1.jpg" style="width:100%">
+    <img class="aktuelles1" src="dorftunier.jpg" style="width:100%">
+    <img class="aktuelles1" src="dorftunier1.jpg" style="width:100%">
 
     <button class="w3-button w3-black w3-display-left" onclick="plusAktuelles1(-1)">&#10094;</button>
     <button class="w3-button w3-black w3-display-right" onclick="plusAktuelles1(1)">&#10095;</button>
+    </div>
+    <div class="w3-container">
+      <h3><b>Teilnahme am Sellrainer Dorftunier</b></h3>
+      <h5>[Fotos: FF-Sellrain]<span class="w3-opacity"></span></h5>
+    </div>
+
+    <div class="w3-container">
+      <p>Auch beim Sellrainer Dorftunier stellte die Freiwillige Feuerwehr Sellrain ihr sportliches Können wieder unter Beweis und belegte den 4. Platz !</p>
+      <div class="w3-row">
+        <div class="w3-col m8 s12">
+        </div>
+        <div class="w3-col m4 w3-hide-small">
+        </div>
+      </div>
+    </div>
+    <script>
+    var slideIndex = 1;
+    showAktuelles1(slideIndex);
+
+    function plusAktuelles1(n) {
+      showAktuelles1(slideIndex += n);
+    }
+
+    function showAktuelles1(n) {
+      var i;
+      var x = document.getElementsByClassName("aktuelles1");
+      if (n > x.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = x.length}
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      x[slideIndex-1].style.display = "block";
+    }
+    </script>
+  </div>
+
+
+
+  <div class="w3-card-4 w3-margin w3-white"id="2">
+
+    <div class="w3-content w3-display-container">
+    <img class="aktuelles2" src="Innernavis.jpg" style="width:100%">
+    <img class="aktuelles2" src="Innernavis1.jpg" style="width:100%">
+
+    <button class="w3-button w3-black w3-display-left" onclick="plusAktuelles2(-1)">&#10094;</button>
+    <button class="w3-button w3-black w3-display-right" onclick="plusAktuelles2(1)">&#10095;</button>
     </div>
     <div class="w3-container">
       <h3><b>FF SELLRAIN erfolgreichste Feuerwehr beim Nassleistungswettbewerb im Bezirk Innsbruck-Land </b></h3>
@@ -87,51 +132,6 @@ and is wrapped around the whole page content, except for the footer in this exam
     </div>
     <script>
     var slideIndex = 1;
-    showAktuelles1(slideIndex);
-
-    function plusAktuelles1(n) {
-      showAktuelles1(slideIndex += n);
-    }
-
-    function showAktuelles1(n) {
-      var i;
-      var x = document.getElementsByClassName("aktuelles1");
-      if (n > x.length) {slideIndex = 1}
-      if (n < 1) {slideIndex = x.length}
-      for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none";
-      }
-      x[slideIndex-1].style.display = "block";
-    }
-    </script>
-  </div>
-
-
-  <div class="w3-card-4 w3-margin w3-white"id="2">
-
-    <div class="w3-content w3-display-container">
-    <img class="aktuelles2" src="sellrain1.jpg" style="width:100%">
-    <img class="aktuelles2" src="sellrain2.jpg" style="width:100%">
-    <img class="aktuelles2" src="sellrain3.jpg" style="width:100%">
-
-    <button class="w3-button w3-black w3-display-left" onclick="plusAktuelles2(-1)">&#10094;</button>
-    <button class="w3-button w3-black w3-display-right" onclick="plusAktuelles2(1)">&#10095;</button>
-    </div>
-    <div class="w3-container">
-      <h3><b>Teilnahme beim Abschnittsbeweb in Flaurling</b></h3>
-      <h5>[Quelle: BI Thomas Hagele und BI Hans R&oumldlach &OumlA AB Telfs ]<span class="w3-opacity"></span></h5>
-    </div>
-
-    <div class="w3-container">
-      <div class="w3-row">
-        <div class="w3-col m8 s12">
-        </div>
-        <div class="w3-col m4 w3-hide-small">
-        </div>
-      </div>
-    </div>
-    <script>
-    var slideIndex = 1;
     showAktuelles2(slideIndex);
 
     function plusAktuelles2(n) {
@@ -150,18 +150,24 @@ and is wrapped around the whole page content, except for the footer in this exam
     }
     </script>
   </div>
-<!-- END BLOG ENTRIES -->
 
-  <!-- Blog entry -->
+
   <div class="w3-card-4 w3-margin w3-white"id="3">
-  <img src="FriedenslichtGeld.jpg" alt="Norway" style="width:100%">
-    <div class="w3-container" >
-      <h3><b>Spende an die Kinderkrebshilfe</b></h3>
-      <h5>[Foto: Manfred Hassl]<span class="w3-opacity"></span></h5>
+
+    <div class="w3-content w3-display-container">
+    <img class="aktuelles3" src="sellrain1.jpg" style="width:100%">
+    <img class="aktuelles3" src="sellrain2.jpg" style="width:100%">
+    <img class="aktuelles3" src="sellrain3.jpg" style="width:100%">
+
+    <button class="w3-button w3-black w3-display-left" onclick="plusAktuelles3(-1)">&#10094;</button>
+    <button class="w3-button w3-black w3-display-right" onclick="plusAktuelles3(1)">&#10095;</button>
+    </div>
+    <div class="w3-container">
+      <h3><b>Teilnahme beim Abschnittsbeweb in Flaurling</b></h3>
+      <h5>[Quelle: BI Thomas Hagele und BI Hans R&oumldlach &OumlA AB Telfs ]<span class="w3-opacity"></span></h5>
     </div>
 
     <div class="w3-container">
-      <p>Wieter Infos unter: <a href="https://www.meinbezirk.at/westliches-mittelgebirge/c-lokales/friedenslicht-aktion-fuer-die-kinderkrebshilfe_a3306411">https://www.meinbezirk.at/...</a></p>
       <div class="w3-row">
         <div class="w3-col m8 s12">
         </div>
@@ -169,7 +175,28 @@ and is wrapped around the whole page content, except for the footer in this exam
         </div>
       </div>
     </div>
+    <script>
+    var slideIndex = 1;
+    showAktuelles3(slideIndex);
+
+    function plusAktuelles3(n) {
+      showAktuelles3(slideIndex += n);
+    }
+
+    function showAktuelles3(n) {
+      var i;
+      var x = document.getElementsByClassName("aktuelles3");
+      if (n > x.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = x.length}
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      x[slideIndex-1].style.display = "block";
+    }
+    </script>
   </div>
+<!-- END BLOG ENTRIES -->
+
   <hr>
 </div>
 
