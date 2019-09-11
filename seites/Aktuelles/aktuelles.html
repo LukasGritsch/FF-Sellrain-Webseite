@@ -42,14 +42,38 @@ and is wrapped around the whole page content, except for the footer in this exam
 <div class="w3-col l8 s12">
 
   <!-- Blog entry -->
+
   <div class="w3-card-4 w3-margin w3-white"id="1">
 
     <div class="w3-content w3-display-container">
-    <img class="aktuelles1" src="dorftunier.jpg" style="width:100%">
-    <img class="aktuelles1" src="dorftunier1.jpg" style="width:100%">
+    <img src="MaxThurner.png" style="width:100%">
+    </div>
+    <div class="w3-container">
+      <h3><b>Ehrenmitglied verstorben</b></h3>
+      <h5>[Fotos: FF-Sellrain Anl&aumlsslich 90. Geburtstag]<span class="w3-opacity"></span></h5>
+    </div>
 
-    <button class="w3-button w3-black w3-display-left" onclick="plusAktuelles1(-1)">&#10094;</button>
-    <button class="w3-button w3-black w3-display-right" onclick="plusAktuelles1(1)">&#10095;</button>
+    <div class="w3-container">
+      <p>Die FF-Sellrain trauert um Ehrenmitglied Max Thurner.</p>
+      <div class="w3-row">
+        <div class="w3-col m8 s12">
+        </div>
+        <div class="w3-col m4 w3-hide-small">
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="w3-card-4 w3-margin w3-white"id="2">
+
+    <div class="w3-content w3-display-container">
+    <img class="aktuelles2" src="dorftunier.jpg" style="width:100%">
+    <img class="aktuelles2" src="dorftunier1.jpg" style="width:100%">
+
+    <button class="w3-button w3-black w3-display-left" onclick="plusAktuelles2(-1)">&#10094;</button>
+    <button class="w3-button w3-black w3-display-right" onclick="plusAktuelles2(1)">&#10095;</button>
     </div>
     <div class="w3-container">
       <h3><b>Teilnahme am Sellrainer Dorftunier</b></h3>
@@ -67,15 +91,15 @@ and is wrapped around the whole page content, except for the footer in this exam
     </div>
     <script>
     var slideIndex = 1;
-    showAktuelles1(slideIndex);
+    showAktuelles2(slideIndex);
 
-    function plusAktuelles1(n) {
-      showAktuelles1(slideIndex += n);
+    function plusAktuelles2(n) {
+      showAktuelles2(slideIndex += n);
     }
 
-    function showAktuelles1(n) {
+    function showAktuelles2(n) {
       var i;
-      var x = document.getElementsByClassName("aktuelles1");
+      var x = document.getElementsByClassName("aktuelles2");
       if (n > x.length) {slideIndex = 1}
       if (n < 1) {slideIndex = x.length}
       for (i = 0; i < x.length; i++) {
@@ -88,14 +112,14 @@ and is wrapped around the whole page content, except for the footer in this exam
 
 
 
-  <div class="w3-card-4 w3-margin w3-white"id="2">
+  <div class="w3-card-4 w3-margin w3-white"id="3">
 
     <div class="w3-content w3-display-container">
-    <img class="aktuelles2" src="Innernavis.jpg" style="width:100%">
-    <img class="aktuelles2" src="Innernavis1.jpg" style="width:100%">
+    <img class="aktuelles3" src="Innernavis.jpg" style="width:100%">
+    <img class="aktuelles3" src="Innernavis1.jpg" style="width:100%">
 
-    <button class="w3-button w3-black w3-display-left" onclick="plusAktuelles2(-1)">&#10094;</button>
-    <button class="w3-button w3-black w3-display-right" onclick="plusAktuelles2(1)">&#10095;</button>
+    <button class="w3-button w3-black w3-display-left" onclick="plusAktuelles3(-1)">&#10094;</button>
+    <button class="w3-button w3-black w3-display-right" onclick="plusAktuelles3(1)">&#10095;</button>
     </div>
     <div class="w3-container">
       <h3><b>FF SELLRAIN erfolgreichste Feuerwehr beim Nassleistungswettbewerb im Bezirk Innsbruck-Land </b></h3>
@@ -132,15 +156,15 @@ and is wrapped around the whole page content, except for the footer in this exam
     </div>
     <script>
     var slideIndex = 1;
-    showAktuelles2(slideIndex);
+    showAktuelles3(slideIndex);
 
-    function plusAktuelles2(n) {
-      showAktuelles2(slideIndex += n);
+    function plusAktuelles3(n) {
+      showAktuelles3(slideIndex += n);
     }
 
-    function showAktuelles2(n) {
+    function showAktuelles3(n) {
       var i;
-      var x = document.getElementsByClassName("aktuelles2");
+      var x = document.getElementsByClassName("aktuelles3");
       if (n > x.length) {slideIndex = 1}
       if (n < 1) {slideIndex = x.length}
       for (i = 0; i < x.length; i++) {
@@ -152,7 +176,7 @@ and is wrapped around the whole page content, except for the footer in this exam
   </div>
 
 
-  <div class="w3-card-4 w3-margin w3-white"id="3">
+  <!--<div class="w3-card-4 w3-margin w3-white"id="3">
 
     <div class="w3-content w3-display-container">
     <img class="aktuelles3" src="sellrain1.jpg" style="width:100%">
@@ -194,7 +218,7 @@ and is wrapped around the whole page content, except for the footer in this exam
       x[slideIndex-1].style.display = "block";
     }
     </script>
-  </div>
+  </div>-->
 <!-- END BLOG ENTRIES -->
 
   <hr>
