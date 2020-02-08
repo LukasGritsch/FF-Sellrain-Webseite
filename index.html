@@ -86,21 +86,40 @@ function toggleFunction() {
 }
 
 $(function() {
+  if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
     $( "#dialog" ).dialog({
       position: { my: "top", at: "top", of: window },
       hide: { effect: "fadeOut", duration: 1000 },
-      minWidth: 530,
+      minWidth: 250,
+      maxHeight: 800,
       draggable: false
     });
+    var img = document.getElementById('imgBig');
+    img.style.display = "none";
+    var img1 = document.getElementById('imgSmall');
+    img1.style.visibility = 'visible';
+}else{
+  $( "#dialog" ).dialog({
+    position: { my: "top", at: "top", of: window },
+    hide: { effect: "fadeOut", duration: 1000 },
+    minWidth: 530,
+    maxHeight: 800,
+    draggable: false
   });
-
+  var img = document.getElementById('imgBig');
+  img.style.visibility = 'visible';
+  var img1 = document.getElementById('imgSmall');
+  img1.style.display = "none";
+}
+  });
 
 </script>
 
 <body>
 <!--Dies ist ein Dialog mit Bild-->
   <div id="dialog" title="122 Jahre FF-Sellrain">
-    <img src="Flyer_FFSellrain.png" alt="Placeholder Image" />
+    <img id="imgBig" src="Flyer_FFSellrain.png" alt="Placeholder Image" />
+    <img id="imgSmall" src="Flyer_FFSellrain_small.png" alt="Placeholder Image" />
   </div>
 
 <!-- Navbar (sit on top) -->
