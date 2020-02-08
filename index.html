@@ -85,9 +85,23 @@ function toggleFunction() {
     }
 }
 
+$(function() {
+    $( "#dialog" ).dialog({
+      position: { my: "top", at: "top", of: window },
+      hide: { effect: "fadeOut", duration: 1000 },
+      minWidth: 530,
+      draggable: false
+    });
+  });
+
+
 </script>
 
 <body>
+<!--Dies ist ein Dialog mit Bild-->
+  <div id="dialog" title="122 Jahre FF-Sellrain">
+    <img src="Flyer_FFSellrain.png" alt="Placeholder Image" />
+  </div>
 
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
