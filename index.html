@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <title>FF Sellrain</title>
+<link rel="icon" type="image/ico" href="sellrain.png" />
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -16,7 +17,6 @@ body, html {
     color: #777;
     line-height: 1.8;
 }
-
 
 /* Create a Parallax Effect */
 .bgimg-1, .bgimg-2, .bgimg-3 , .bgimg-4{
@@ -34,19 +34,20 @@ body, html {
 
 /* Second image (Aktuelles) */
 .bgimg-2 {
-    background-image: url("aktuelles.jpg");
+    background-image: url("seites/Aktuelles/aktuelles.jpg");
     min-height: 400px;
+    color: black;
 }
 
 /* Third image (Uebungen) */
 .bgimg-3 {
-    background-image: url("uebungen.jpg");
+    background-image: url("seites/Uebungen/uebungen.jpg");
     min-height: 400px;
 }
 
 /* Fourd image (Einsätze) */
 .bgimg-4 {
-    background-image: url("einsaetze.jpg");
+    background-image: url("seites/Einsatz/einsaetze.jpg");
     min-height: 400px;
 }
 
@@ -58,7 +59,6 @@ body, html {
     .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
         background-attachment: scroll;
     }
-
     div#title {
     font-size: 80px;
   }
@@ -72,78 +72,98 @@ body, html {
 div#myNavbar{
   background-color: black;
 }
+
+@media only screen
+and (min-width : 1224px) {
+
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: white;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+  width: 100%;
+}
+
+.sidebar a.active {
+  background-color: red;
+  color: white;
+}
+
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+img#logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 120px;
+}
+}
+
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 1024px) {
+  div.content {
+    height: 800px;
+  }
+  div.sidebar {
+    margin: 0;
+    padding-top: 5px;
+    width: 100%;
+    background-color: #555;
+    position: fixed;
+    height: 46px;
+  }
+
+  .sidebar a {
+    display: inline;
+    color: white;
+    padding: 2%;
+    text-decoration: none;
+    background-color: #555;
+  }
+
+  img#logo {
+    height: 0px;
+    width: 0px;
+  }
+
+  div.w3-third{
+    margin-bottom: 20px;
+  }
+}
 </style>
 
-<script>
-
-function toggleFunction() {
-    var x = document.getElementById("navDemo");
-    if (x.className.indexOf("w3-show") == -1) {
-        x.className += " w3-show";
-    } else {
-        x.className = x.className.replace(" w3-show", "");
-    }
-}
-
-$(function() {
-  if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
-    $( "#dialog" ).dialog({
-      position: { my: "top", at: "top", of: window },
-      hide: { effect: "fadeOut", duration: 1000 },
-      minWidth: 250,
-      maxHeight: 800,
-      draggable: false
-    });
-    var img = document.getElementById('imgBig');
-    img.style.display = "none";
-    var img1 = document.getElementById('imgSmall');
-    img1.style.visibility = 'visible';
-}else{
-  $( "#dialog" ).dialog({
-    position: { my: "top", at: "top", of: window },
-    hide: { effect: "fadeOut", duration: 1000 },
-    minWidth: 530,
-    maxHeight: 800,
-    draggable: false
-  });
-  var img = document.getElementById('imgBig');
-  img.style.visibility = 'visible';
-  var img1 = document.getElementById('imgSmall');
-  img1.style.display = "none";
-}
-  });
-
-</script>
-
 <body>
-<!--Dies ist ein Dialog mit Bild-->
-  <div id="dialog" title="122 Jahre FF-Sellrain">
-    <img id="imgBig" src="Flyer_FFSellrain.png" alt="Placeholder Image" />
-    <img id="imgSmall" src="Flyer_FFSellrain_small.png" alt="Placeholder Image" />
-  </div>
-
-<!-- Navbar (sit on top) -->
 <div class="w3-top">
-  <div class="w3-bar" id="myNavbar">
-    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
-      <i class="fa fa-bars"></i>
-    </a>
-    <a href="#home" class="w3-bar-item w3-button">Home</a>
-    <a href="#einsatz" class="w3-bar-item w3-button w3-hide-small"> Eins&aumltze</a>
-    <a href="#uebung" class="w3-bar-item w3-button w3-hide-small">&Uumlbungen</a>
-    <a href="#aktuelles" class="w3-bar-item w3-button w3-hide-small">Aktuelles</a>
-  </div>
 
-  <!-- Navbar on small screens -->
-  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
-    <a href="#aktuelles" class="w3-bar-item w3-button" onclick="toggleFunction()">Aktuelles</a>
-    <a href="#uebung" class="w3-bar-item w3-button" onclick="toggleFunction()">&Uumlbungen</a>
-    <a href="#einsatz" class="w3-bar-item w3-button" onclick="toggleFunction()">Einsatz</a>
+  <div class="sidebar">
+    <img src="sellrain.png" class="center" id="logo">
+    <a href="#home">Startseite</a>
+    <a href="#einsatz">Eins&aumltze</a>
+    <a href="#uebung">&Uumlbungen</a>
+    <a href="#aktuelles">Aktuelles</a>
   </div>
 </div>
+<div class="content">
 
-<!-- First Parallax Image with Logo Text -->
-<!-- First Parallax Image with Logo Text -->
 <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
   <div class="w3-display-middle" style="white-space:nowrap;">
     <!--<span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">FF-Sellrain</span>-->
@@ -159,15 +179,12 @@ $(function() {
 
 
 <div>
-
 <div class="w3-row-padding w3-margin-top">
-
-
   <div class="w3-third">
-  <div class="w3-card">
+    <div class="w3-card">
       <div class="w3-content w3-display-container">
-      <a href="seites/Einsatz/einsatz.html#1"><img class="einsatz1" src="seites/Einsatz/kfzAbsturz.jpg" style="width:100%"></a>
       <a href="seites/Einsatz/einsatz.html#1"><img class="einsatz1" src="seites/Einsatz/kfzAbsturz1.jpg" style="width:100%"></a>
+      <a href="seites/Einsatz/einsatz.html#1"><img class="einsatz1" src="seites/Einsatz/kfzAbsturz.jpg" style="width:100%"></a>
       <a href="seites/Einsatz/einsatz.html#1"><img class="einsatz1" src="seites/Einsatz/kfzAbsturz2.jpg" style="width:100%"></a>
       <a href="seites/Einsatz/einsatz.html#1"><img class="einsatz1" src="seites/Einsatz/kfzAbsturz3.jpg" style="width:100%"></a>
       <a href="seites/Einsatz/einsatz.html#1"><img class="einsatz1" src="seites/Einsatz/kfzAbsturz4.jpg" style="width:100%"></a>
@@ -177,7 +194,6 @@ $(function() {
       <button class="w3-button w3-black w3-display-left" onclick="plusEinsatz1(-1)">&#10094;</button>
       <button class="w3-button w3-black w3-display-right" onclick="plusEinsatz1(1)">&#10095;</button>
       </div>
-  </div>
 
       <div class="w3-container">
           <h5>Fahrzeugabsturz [Fotos: FF-Sellrain und <a href="https://zeitungsfoto.at/">Zeitungsfoto.at</a>]</h5>
@@ -202,10 +218,11 @@ $(function() {
       }
       </script>
     </div>
+    </div>
 
 
   <div class="w3-third">
-  <div class="w3-card">
+    <div class="w3-card">
       <div class="w3-content w3-display-container">
       <a href="seites/Einsatz/einsatz.html#2"><img class="einsatz2" src="seites/Einsatz/personAbsturz1.jpg" style="width:100%"></a>
       <a href="seites/Einsatz/einsatz.html#2"><img class="einsatz2" src="seites/Einsatz/personAbsturz2.jpg" style="width:100%"></a>
@@ -214,7 +231,6 @@ $(function() {
       <button class="w3-button w3-black w3-display-left" onclick="plusEinsatz2(-1)">&#10094;</button>
       <button class="w3-button w3-black w3-display-right" onclick="plusEinsatz2(1)">&#10095;</button>
       </div>
-  </div>
 
       <div class="w3-container">
           <h5>Person abgest&uumlrzt</h5>
@@ -239,6 +255,7 @@ $(function() {
       }
       </script>
     </div>
+    </div>
 
   <div class="w3-third">
     <div class="w3-card">
@@ -248,19 +265,10 @@ $(function() {
       </div>
     </div>
   </div>
-
-  <!--<div class="w3-third">
-    <div class="w3-card">
-      <a href="seites/Einsatz/einsatz.html#3"> <img src="seites/Einsatz/keinBild.png" style="width:100%"></a>
-      <div class="w3-container">
-          <h5>Ertrinkungsunfall im Fotschertal</h5>
-      </div>
-    </div>
-  </div>-->
 </div>
-
 </div>
 <br>
+
 <!-- 3rd Parallax Image with Portfolio Text -->
 <div class="bgimg-3 w3-display-container w3-opacity-min" id="uebung">
   <div class="w3-display-middle">
@@ -301,7 +309,8 @@ $(function() {
 
 </div>
 <br>
-<!-- Second Parallax Image with Portfolio Text -->
+
+
 <div class="bgimg-2 w3-display-container w3-opacity-min" id="aktuelles">
   <div class="w3-display-middle">
     <span class="w3-xxlarge w3-text-white w3-wide">AKTUELLES</span>
@@ -310,93 +319,41 @@ $(function() {
 
 
 <div>
-
 <div class="w3-row-padding w3-margin-top">
 
-
   <div class="w3-third">
   <div class="w3-card">
       <div class="w3-content w3-display-container">
-      <a href="seites/Aktuelles/aktuelles.html#1"><img class="aktuelles1" src="seites/Aktuelles/MaxThurner.png" style="width:100%"></a>
+      <a href="seites/Aktuelles/aktuelles.html#1"><img class="aktuelles1" src="seites/Aktuelles/FFBriefmarke.jpg" style="width:100%"></a>
       </div>
-  </div>
-
       <div class="w3-container">
-          <h5>Ehrenmitglied verstorben [Fotos: FF-Sellrain Anl&aumlsslich 90. Geburtstag]</h5>
+          <h5>122 Jahre FF-Sellrain ...</h5>
       </div>
     </div>
-
-
-  <div class="w3-third">
-  <div class="w3-card">
-      <div class="w3-content w3-display-container">
-      <a href="seites/Aktuelles/aktuelles.html#2"><img class="aktuelles2" src="seites/Aktuelles/dorftunier1.jpg" style="width:100%"></a>
-      <a href="seites/Aktuelles/aktuelles.html#2"><img class="aktuelles2" src="seites/Aktuelles/dorftunier.jpg" style="width:100%"></a>
-
-      <button class="w3-button w3-black w3-display-left" onclick="plusAktuelles2(-1)">&#10094;</button>
-      <button class="w3-button w3-black w3-display-right" onclick="plusAktuelles2(1)">&#10095;</button>
-      </div>
-  </div>
-
-      <div class="w3-container">
-          <h5>Teilnahme am Sellrainer Dorftunier [Fotos: FF-Sellrain]</h5>
-      </div>
-      <script>
-      var slideIndex = 1;
-      showAktuelles2(slideIndex);
-
-      function plusAktuelles2(n) {
-        showAktuelles2(slideIndex += n);
-      }
-
-      function showAktuelles2(n) {
-        var i;
-        var x = document.getElementsByClassName("aktuelles2");
-        if (n > x.length) {slideIndex = 1}
-        if (n < 1) {slideIndex = x.length}
-        for (i = 0; i < x.length; i++) {
-          x[i].style.display = "none";
-        }
-        x[slideIndex-1].style.display = "block";
-      }
-      </script>
     </div>
 
   <div class="w3-third">
   <div class="w3-card">
       <div class="w3-content w3-display-container">
-      <a href="seites/Aktuelles/aktuelles.html#3"><img class="aktuelles3" src="seites/Aktuelles/Innernavis.jpg" style="width:100%"></a>
-      <a href="seites/Aktuelles/aktuelles.html#3"><img class="aktuelles3" src="seites/Aktuelles/Innernavis1.jpg" style="width:100%"></a>
-
-      <button class="w3-button w3-black w3-display-left" onclick="plusAktuelles3(-1)">&#10094;</button>
-      <button class="w3-button w3-black w3-display-right" onclick="plusAktuelles3(1)">&#10095;</button>
+      <a href="seites/Aktuelles/aktuelles.html#2"><img class="aktuelles1" src="seites/Aktuelles/Flyer_FFSellrain.jpg" style="width:100%"></a>
       </div>
-  </div>
-
       <div class="w3-container">
-          <h5>FF SELLRAIN erfolgreichste Feuerwehr beim Nassleistungswettbewerb im Bezirk Innsbruck-Land [Fotos: FF-Sellrain]</h5>
+          <h5>Abschnittsbewerb abgesagt ...</h5>
       </div>
-      <script>
-      var slideIndex = 1;
-      showAktuelles3(slideIndex);
-
-      function plusAktuelles3(n) {
-        showAktuelles3(slideIndex += n);
-      }
-
-      function showAktuelles3(n) {
-        var i;
-        var x = document.getElementsByClassName("aktuelles3");
-        if (n > x.length) {slideIndex = 1}
-        if (n < 1) {slideIndex = x.length}
-        for (i = 0; i < x.length; i++) {
-          x[i].style.display = "none";
-        }
-        x[slideIndex-1].style.display = "block";
-      }
-      </script>
     </div>
-  </div>
+    </div>
+
+  <div class="w3-third">
+  <div class="w3-card">
+      <div class="w3-content w3-display-container">
+      <a href="seites/Aktuelles/aktuelles.html#3"><img class="aktuelles1" src="seites/Aktuelles/MaxThurner.png" style="width:100%"></a>
+      </div>
+      <div class="w3-container">
+          <h5>Ehrenmitglied verstorben ...</h5>
+      </div>
+    </div>
+    </div>
+</div>
 </div>
 </div>
 </body>
