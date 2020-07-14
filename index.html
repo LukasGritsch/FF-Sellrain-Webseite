@@ -322,37 +322,107 @@ and (max-device-width : 1024px) {
 <div class="w3-row-padding w3-margin-top">
 
   <div class="w3-third">
+    <div class="w3-card">
+      <div class="w3-content w3-display-container">
+      <a href="seites/Aktuelles/aktuelles.html#1"><img class="aktuelles1" src="seites/Aktuelles/FFWeihe.JPG" style="width:100%"></a>
+      <a href="seites/Aktuelles/aktuelles.html#1"><img class="aktuelles1" src="seites/Aktuelles/FFWeihe1.JPG" style="width:100%"></a>
+      <a href="seites/Aktuelles/aktuelles.html#1"><img class="aktuelles1" src="seites/Aktuelles/FFWeihe2.JPG" style="width:100%"></a>
+      <a href="seites/Aktuelles/aktuelles.html#1"><img class="aktuelles1" src="seites/Aktuelles/FFWeihe3.JPG" style="width:100%"></a>
+      <a href="seites/Aktuelles/aktuelles.html#1"><img class="aktuelles1" src="seites/Aktuelles/FFWeihe4.JPG" style="width:100%"></a>
+      <a href="seites/Aktuelles/aktuelles.html#1"><img class="aktuelles1" src="seites/Aktuelles/FFWeihe5.JPG" style="width:100%"></a>
+      <a href="seites/Aktuelles/aktuelles.html#1"><img class="aktuelles1" src="seites/Aktuelles/FFWeihe6.JPG" style="width:100%"></a>
+      <a href="seites/Aktuelles/aktuelles.html#1"><img class="aktuelles1" src="seites/Aktuelles/FFWeihe7.JPG" style="width:100%"></a>
+      <a href="seites/Aktuelles/aktuelles.html#1"><img class="aktuelles1" src="seites/Aktuelles/FFWeihe8.JPG" style="width:100%"></a>
+
+      <button class="w3-button w3-black w3-display-left" onclick="plusAktuelles1(-1)">&#10094;</button>
+      <button class="w3-button w3-black w3-display-right" onclick="plusAktuelles1(1)">&#10095;</button>
+      </div>
+
+      <div class="w3-container">
+          <h5>Segnung LAST Sellrain </h5>
+      </div>
+      <script>
+      var slideIndex = 1;
+      showAktuelles1(slideIndex);
+
+      function plusAktuelles1(n) {
+        showAktuelles1(slideIndex += n);
+      }
+
+      function showAktuelles1(n) {
+        var i;
+        var x = document.getElementsByClassName("aktuelles1");
+        if (n > x.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = x.length}
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        x[slideIndex-1].style.display = "block";
+      }
+      </script>
+    </div>
+  </div>
+
+  <div class="w3-third">
   <div class="w3-card">
       <div class="w3-content w3-display-container">
-      <a href="seites/Aktuelles/aktuelles.html#1"><img class="aktuelles1" src="seites/Aktuelles/FFBriefmarke.jpg" style="width:100%"></a>
+      <a href="seites/Aktuelles/aktuelles.html#2"><img class="aktuelles2" src="seites/Aktuelles/FFBriefmarke.jpg" style="width:100%"></a>
       </div>
       <div class="w3-container">
           <h5>122 Jahre FF-Sellrain ...</h5>
       </div>
+      <script>
+      var slideIndex = 1;
+      showAktuelles2(slideIndex);
+
+      function plusAktuelles2(n) {
+        showAktuelles2(slideIndex += n);
+      }
+
+      function showAktuelles2(n) {
+        var i;
+        var x = document.getElementsByClassName("aktuelles2");
+        if (n > x.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = x.length}
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        x[slideIndex-1].style.display = "block";
+      }
+      </script>
     </div>
     </div>
 
   <div class="w3-third">
   <div class="w3-card">
       <div class="w3-content w3-display-container">
-      <a href="seites/Aktuelles/aktuelles.html#2"><img class="aktuelles1" src="seites/Aktuelles/Flyer_FFSellrain.jpg" style="width:100%"></a>
+      <a href="seites/Aktuelles/aktuelles.html#3"><img class="aktuelles3" src="seites/Aktuelles/Flyer_FFSellrain.jpg" style="width:100%"></a>
       </div>
       <div class="w3-container">
           <h5>Abschnittsbewerb abgesagt ...</h5>
       </div>
-    </div>
-    </div>
+      <script>
+      var slideIndex = 1;
+      showAktuelles3(slideIndex);
 
-  <div class="w3-third">
-  <div class="w3-card">
-      <div class="w3-content w3-display-container">
-      <a href="seites/Aktuelles/aktuelles.html#3"><img class="aktuelles1" src="seites/Aktuelles/MaxThurner.png" style="width:100%"></a>
-      </div>
-      <div class="w3-container">
-          <h5>Ehrenmitglied verstorben ...</h5>
-      </div>
+      function plusAktuelles3(n) {
+        showAktuelles3(slideIndex += n);
+      }
+
+      function showAktuelles3(n) {
+        var i;
+        var x = document.getElementsByClassName("aktuelles3");
+        if (n > x.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = x.length}
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        x[slideIndex-1].style.display = "block";
+      }
+      </script>
     </div>
-    </div>
+  </div>
+
 </div>
 </div>
 </div>
