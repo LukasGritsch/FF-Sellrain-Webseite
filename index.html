@@ -180,17 +180,53 @@ and (max-device-width : 1024px) {
 <div>
 <div class="w3-row-padding w3-margin-top">
 
+  <div class="w3-third">
+    <div class="w3-card">
+      <div class="w3-content w3-display-container">
+      <a href="seites/Einsatz/einsatz.html#1"><img class="einsatz1" src="seites/Einsatz/unfall.jpg" style="width:100%"></a>
+      <a href="seites/Einsatz/einsatz.html#1"><img class="einsatz1" src="seites/Einsatz/unfall1.jpg" style="width:100%"></a>
+      <a href="seites/Einsatz/einsatz.html#1"><img class="einsatz1" src="seites/Einsatz/unfall2.jpg" style="width:100%"></a>
+
+      <button class="w3-button w3-black w3-display-left" onclick="plusEinsatz1(-1)">&#10094;</button>
+      <button class="w3-button w3-black w3-display-right" onclick="plusEinsatz1(1)">&#10095;</button>
+      </div>
+
+      <div class="w3-container">
+          <h5>Verkehrsunfall auf der L013 [Fotos: <a href="https://zeitungsfoto.at/">Zeitungsfoto.at</a>]</h5>
+      </div>
+      <script>
+      var slideIndex = 1;
+      showEinsatz1(slideIndex);
+
+      function plusEinsatz1(n) {
+        showEinsatz1(slideIndex += n);
+      }
+
+      function showEinsatz1(n) {
+        var i;
+        var x = document.getElementsByClassName("einsatz1");
+        if (n > x.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = x.length}
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        x[slideIndex-1].style.display = "block";
+      }
+      </script>
+    </div>
+    </div>
+
 <div class="w3-third">
   <div class="w3-card">
     <div class="w3-content w3-display-container">
-    <a href="seites/Einsatz/einsatz.html#1"><img class="einsatz1" src="seites/Einsatz/mure.jpeg" style="width:100%"></a>
-    <a href="seites/Einsatz/einsatz.html#1"><img class="einsatz1" src="seites/Einsatz/mure1.jpeg" style="width:100%"></a>
-    <a href="seites/Einsatz/einsatz.html#1"><img class="einsatz1" src="seites/Einsatz/mure2.jpeg" style="width:100%"></a>
-    <a href="seites/Einsatz/einsatz.html#1"><img class="einsatz1" src="seites/Einsatz/mure3.jpeg" style="width:100%"></a>
-    <a href="seites/Einsatz/einsatz.html#1"><img class="einsatz1" src="seites/Einsatz/mure4.jpeg" style="width:100%"></a>
+    <a href="seites/Einsatz/einsatz.html#2"><img class="einsatz2" src="seites/Einsatz/mure.jpeg" style="width:100%"></a>
+    <a href="seites/Einsatz/einsatz.html#2"><img class="einsatz2" src="seites/Einsatz/mure1.jpeg" style="width:100%"></a>
+    <a href="seites/Einsatz/einsatz.html#2"><img class="einsatz2" src="seites/Einsatz/mure2.jpeg" style="width:100%"></a>
+    <a href="seites/Einsatz/einsatz.html#2"><img class="einsatz2" src="seites/Einsatz/mure3.jpeg" style="width:100%"></a>
+    <a href="seites/Einsatz/einsatz.html#2"><img class="einsatz2" src="seites/Einsatz/mure4.jpeg" style="width:100%"></a>
 
-    <button class="w3-button w3-black w3-display-left" onclick="plusEinsatz1(-1)">&#10094;</button>
-    <button class="w3-button w3-black w3-display-right" onclick="plusEinsatz1(1)">&#10095;</button>
+    <button class="w3-button w3-black w3-display-left" onclick="plusEinsatz2(-1)">&#10094;</button>
+    <button class="w3-button w3-black w3-display-right" onclick="plusEinsatz2(1)">&#10095;</button>
     </div>
 
     <div class="w3-container">
@@ -198,15 +234,15 @@ and (max-device-width : 1024px) {
     </div>
     <script>
     var slideIndex = 1;
-    showEinsatz1(slideIndex);
+    showEinsatz2(slideIndex);
 
-    function plusEinsatz1(n) {
-      showEinsatz1(slideIndex += n);
+    function plusEinsatz2(n) {
+      showEinsatz2(slideIndex += n);
     }
 
-    function showEinsatz1(n) {
+    function showEinsatz2(n) {
       var i;
-      var x = document.getElementsByClassName("einsatz1");
+      var x = document.getElementsByClassName("einsatz2");
       if (n > x.length) {slideIndex = 1}
       if (n < 1) {slideIndex = x.length}
       for (i = 0; i < x.length; i++) {
@@ -221,57 +257,20 @@ and (max-device-width : 1024px) {
   <div class="w3-third">
     <div class="w3-card">
       <div class="w3-content w3-display-container">
-      <a href="seites/Einsatz/einsatz.html#2"><img class="einsatz2" src="seites/Einsatz/kfzAbsturz1.jpg" style="width:100%"></a>
-      <a href="seites/Einsatz/einsatz.html#2"><img class="einsatz2" src="seites/Einsatz/kfzAbsturz.jpg" style="width:100%"></a>
-      <a href="seites/Einsatz/einsatz.html#2"><img class="einsatz2" src="seites/Einsatz/kfzAbsturz2.jpg" style="width:100%"></a>
-      <a href="seites/Einsatz/einsatz.html#2"><img class="einsatz2" src="seites/Einsatz/kfzAbsturz3.jpg" style="width:100%"></a>
-      <a href="seites/Einsatz/einsatz.html#2"><img class="einsatz2" src="seites/Einsatz/kfzAbsturz4.jpg" style="width:100%"></a>
-      <a href="seites/Einsatz/einsatz.html#2"><img class="einsatz2" src="seites/Einsatz/kfzAbsturz5.jpg" style="width:100%"></a>
-      <a href="seites/Einsatz/einsatz.html#2"><img class="einsatz2" src="seites/Einsatz/kfzAbsturz6.jpg" style="width:100%"></a>
-
-      <button class="w3-button w3-black w3-display-left" onclick="plusEinsatz2(-1)">&#10094;</button>
-      <button class="w3-button w3-black w3-display-right" onclick="plusEinsatz2(1)">&#10095;</button>
-      </div>
-
-      <div class="w3-container">
-          <h5>Fahrzeugabsturz [Fotos: FF-Sellrain und <a href="https://zeitungsfoto.at/">Zeitungsfoto.at</a>]</h5>
-      </div>
-      <script>
-      var slideIndex = 1;
-      showEinsatz2(slideIndex);
-
-      function plusEinsatz2(n) {
-        showEinsatz2(slideIndex += n);
-      }
-
-      function showEinsatz2(n) {
-        var i;
-        var x = document.getElementsByClassName("einsatz2");
-        if (n > x.length) {slideIndex = 1}
-        if (n < 1) {slideIndex = x.length}
-        for (i = 0; i < x.length; i++) {
-          x[i].style.display = "none";
-        }
-        x[slideIndex-1].style.display = "block";
-      }
-      </script>
-    </div>
-    </div>
-
-
-  <div class="w3-third">
-    <div class="w3-card">
-      <div class="w3-content w3-display-container">
-      <a href="seites/Einsatz/einsatz.html#3"><img class="einsatz3" src="seites/Einsatz/personAbsturz1.jpg" style="width:100%"></a>
-      <a href="seites/Einsatz/einsatz.html#3"><img class="einsatz3" src="seites/Einsatz/personAbsturz2.jpg" style="width:100%"></a>
-      <a href="seites/Einsatz/einsatz.html#3"><img class="einsatz3" src="seites/Einsatz/personAbsturz3.jpg" style="width:100%"></a>
+      <a href="seites/Einsatz/einsatz.html#3"><img class="einsatz3" src="seites/Einsatz/kfzAbsturz1.jpg" style="width:100%"></a>
+      <a href="seites/Einsatz/einsatz.html#3"><img class="einsatz3" src="seites/Einsatz/kfzAbsturz.jpg" style="width:100%"></a>
+      <a href="seites/Einsatz/einsatz.html#3"><img class="einsatz3" src="seites/Einsatz/kfzAbsturz2.jpg" style="width:100%"></a>
+      <a href="seites/Einsatz/einsatz.html#3"><img class="einsatz3" src="seites/Einsatz/kfzAbsturz3.jpg" style="width:100%"></a>
+      <a href="seites/Einsatz/einsatz.html#3"><img class="einsatz3" src="seites/Einsatz/kfzAbsturz4.jpg" style="width:100%"></a>
+      <a href="seites/Einsatz/einsatz.html#3"><img class="einsatz3" src="seites/Einsatz/kfzAbsturz5.jpg" style="width:100%"></a>
+      <a href="seites/Einsatz/einsatz.html#3"><img class="einsatz3" src="seites/Einsatz/kfzAbsturz6.jpg" style="width:100%"></a>
 
       <button class="w3-button w3-black w3-display-left" onclick="plusEinsatz3(-1)">&#10094;</button>
       <button class="w3-button w3-black w3-display-right" onclick="plusEinsatz3(1)">&#10095;</button>
       </div>
 
       <div class="w3-container">
-          <h5>Person abgest&uumlrzt</h5>
+          <h5>Fahrzeugabsturz [Fotos: FF-Sellrain und <a href="https://zeitungsfoto.at/">Zeitungsfoto.at</a>]</h5>
       </div>
       <script>
       var slideIndex = 1;
@@ -294,6 +293,7 @@ and (max-device-width : 1024px) {
       </script>
     </div>
     </div>
+
 </div>
 </div>
 <br>
