@@ -21,7 +21,52 @@ and is wrapped around the whole page content, except for the footer in this exam
 <!-- Blog entries -->
 <div class="w3-col l8 s12">
 
+
   <div class="w3-card-4 w3-margin w3-white"id="1">
+
+    <div class="w3-content w3-display-container">
+    <img class="einsatz3" src="unfallSH.jpg" style="width:100%">
+    <img class="einsatz3" src="unfallSH1.jpg" style="width:100%">
+
+    <button class="w3-button w3-black w3-display-left" onclick="plusEinsatz3(-1)">&#10094;</button>
+    <button class="w3-button w3-black w3-display-right" onclick="plusEinsatz3(1)">&#10095;</button>
+    </div>
+    <div class="w3-container">
+      <h3><b>Aufr&aumlumungsarbeiten nach Unfall</b></h3>
+      <h5><span class="w3-opacity">Mittwoch 21 J&aumlnner 2021</span></h5>
+    </div>
+
+    <div class="w3-container">
+      <p>Die FF-Sellrain half bei den Aufr&aumlumarbeiten nach einem Unfall in den Abendstunden.</p>
+      <div class="w3-row">
+        <div class="w3-col m8 s12">
+        </div>
+        <div class="w3-col m4 w3-hide-small">
+        </div>
+      </div>
+    </div>
+    <script>
+    var slideIndex = 1;
+    showEinsatz3(slideIndex);
+
+    function plusEinsatz3(n) {
+      showEinsatz3(slideIndex += n);
+    }
+
+    function showEinsatz3(n) {
+      var i;
+      var x = document.getElementsByClassName("einsatz3");
+      if (n > x.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = x.length}
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      x[slideIndex-1].style.display = "block";
+    }
+    </script>
+  </div>
+
+  <div class="w3-card-4 w3-margin w3-white"id="2">
 
     <div class="w3-content w3-display-container">
     <img class="einsatz1" src="felssturtz.jpg" style="width:100%">
@@ -33,7 +78,7 @@ and is wrapped around the whole page content, except for the footer in this exam
     <button class="w3-button w3-black w3-display-right" onclick="plusEinsatz1(1)">&#10095;</button>
     </div>
     <div class="w3-container">
-      <h3><b>Felssturtz</b></h3>
+      <h3><b>Felssturz</b></h3>
       <h5><span class="w3-opacity">Sonntag 17 J&aumlnner 2021</span></h5>
     </div>
 
@@ -67,7 +112,7 @@ and is wrapped around the whole page content, except for the footer in this exam
     </script>
   </div>
 
-  <div class="w3-card-4 w3-margin w3-white"id="2">
+  <div class="w3-card-4 w3-margin w3-white"id="3">
 
     <div class="w3-content w3-display-container">
     <img class="einsatz2" src="unfall.jpg" style="width:100%">
@@ -114,53 +159,7 @@ and is wrapped around the whole page content, except for the footer in this exam
     </script>
   </div>
 
-  <div class="w3-card-4 w3-margin w3-white"id="3">
 
-    <div class="w3-content w3-display-container">
-    <img class="einsatz3" src="mure.jpeg" style="width:100%">
-    <img class="einsatz3" src="mure1.jpeg" style="width:100%">
-    <img class="einsatz3" src="mure2.jpeg" style="width:100%">
-    <img class="einsatz3" src="mure3.jpeg" style="width:100%">
-    <img class="einsatz3" src="mure4.jpeg" style="width:100%">
-
-    <button class="w3-button w3-black w3-display-left" onclick="plusEinsatz3(-1)">&#10094;</button>
-    <button class="w3-button w3-black w3-display-right" onclick="plusEinsatz3(1)">&#10095;</button>
-    </div>
-    <div class="w3-container">
-      <h3><b>Unwettereinsatz</b></h3>
-      <h5><span class="w3-opacity">Montag 10 August 2020</span></h5>
-    </div>
-
-    <div class="w3-container">
-      <p>Die Unwetter, welche am 10. August 2020 &uumlber das Sellraintal hinwegzogen f&uumlhrten auch wieder zu einen Einsatz der FF-Sellrain. Dies sind einige
-      Eindr&uumlcke von Tag danach.</p>
-      <div class="w3-row">
-        <div class="w3-col m8 s12">
-        </div>
-        <div class="w3-col m4 w3-hide-small">
-        </div>
-      </div>
-    </div>
-    <script>
-    var slideIndex = 1;
-    showEinsatz3(slideIndex);
-
-    function plusEinsatz3(n) {
-      showEinsatz3(slideIndex += n);
-    }
-
-    function showEinsatz3(n) {
-      var i;
-      var x = document.getElementsByClassName("einsatz3");
-      if (n > x.length) {slideIndex = 1}
-      if (n < 1) {slideIndex = x.length}
-      for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none";
-      }
-      x[slideIndex-1].style.display = "block";
-    }
-    </script>
-  </div>
   <hr>
 
 
