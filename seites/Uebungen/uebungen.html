@@ -20,8 +20,47 @@ and is wrapped around the whole page content, except for the footer in this exam
 
 <!-- Blog entries -->
 <div class="w3-col l8 s12">
+
+<!-- Blog entry -->
+<div class="w3-card-4 w3-margin w3-white"id="1">
+  <div class="w3-content w3-display-container">
+    <img class="uebung1" src="F5001.jpeg" style="width:100%">
+    <img class="uebung1" src="F500.jpeg" style="width:100%">
+    <img class="uebung1" src="F5002.jpeg" style="width:100%">
+    <img class="uebung1" src="F5003.jpeg" style="width:100%">
+    <img class="uebung1" src="F5004.jpeg" style="width:100%">
+    <button class="w3-button w3-black w3-display-left" onclick="plusUebungen1(-1)">&#10094;</button>
+    <button class="w3-button w3-black w3-display-right" onclick="plusUebungen1(1)">&#10095;</button>
+    </div>
+
+    <div class="w3-container">
+      <h3><b>&Uumlbung mit F500</b></h3>
+    </div>
+
+    <script>
+    var slideIndex = 1;
+    showUebung1(slideIndex);
+
+    function plusUebungen1(n) {
+      showUebung1(slideIndex += n);
+    }
+
+    function showUebung1(n) {
+      var i;
+      var x = document.getElementsByClassName("uebung1");
+      if (n > x.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = x.length}
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      x[slideIndex-1].style.display = "block";
+    }
+    </script>
+  </div>
+  <hr>
+
   <!-- Blog entry -->
-  <div class="w3-card-4 w3-margin w3-white" id="1">
+  <div class="w3-card-4 w3-margin w3-white" id="2">
   <img src="Volksschule.png" alt="Norway" style="width:100%">
     <div class="w3-container">
       <h3><b>&Uumlbung in der Volksschule Sellrain</b></h3>
@@ -43,7 +82,7 @@ and is wrapped around the whole page content, except for the footer in this exam
   <hr>
 
   <!-- Blog entry -->
-  <div class="w3-card-4 w3-margin w3-white"id="2">
+  <div class="w3-card-4 w3-margin w3-white"id="3">
   <img src="GemeinschaftsUebung1.jpg" alt="Norway" style="width:100%">
     <div class="w3-container">
       <h3><b>Gemeinschafts&uumlbung der Talfeuerwehren in Praxmar</b></h3>
@@ -62,24 +101,6 @@ and is wrapped around the whole page content, except for the footer in this exam
   </div>
   <hr>
 
-  <!-- Blog entry -->
-  <div class="w3-card-4 w3-margin w3-white"id="3">
-  <img src="Bergeschere2.jpg" alt="Norway" style="width:100%">
-    <div class="w3-container">
-      <h3><b>Gemeinschafts&uumlbung mit der FF-Gries im Sellrain</b></h3>
-      <h5>Brand&uumlbung, <span class="w3-opacity">Oktober 22, 2018</span></h5>
-    </div>
-
-    <div class="w3-container">
-      <p>Gemeinsam mit unserer Nachbarfeuerwehr Gries im Sellrain wurde die richtige Handhabung mit der Bergeschere ge&uumlbt.</p>
-      <div class="w3-row">
-        <div class="w3-col m8 s12">
-        </div>
-        <div class="w3-col m4 w3-hide-small">
-        </div>
-      </div>
-    </div>
-  </div>
 <!-- END BLOG ENTRIES -->
 </div>
 
