@@ -42,71 +42,37 @@ and is wrapped around the whole page content, except for the footer in this exam
 <!-- Blog entries -->
 <div class="w3-col l8 s12">
 
-  <!-- Blog entry -->
-
- <div class="w3-card-4 w3-margin w3-white"id="1">
+  <div class="w3-card-4 w3-margin w3-white"id="1">
 
     <div class="w3-content w3-display-container">
-      <img class="aktuelles1" src="auto.jpg" style="width:100%">
-      <img class="aktuelles1" src="auto1.jpeg" style="width:100%">
-      <img class="aktuelles1" src="auto2.jpeg" style="width:100%">
-    <button class="w3-button w3-black w3-display-left" onclick="plusAktuelles1(-1)">&#10094;</button>
-    <button class="w3-button w3-black w3-display-right" onclick="plusAktuelles1(1)">&#10095;</button>
+    <img src="80er.jpeg" style="width:100%">
     </div>
     <div class="w3-container">
-      <h3><b>Fuhrpark der FF-Sellrain</b></h3>
-    </div>
-    <script>
-    var slideIndex = 1;
-    showAktuelles1(slideIndex);
-
-    function plusAktuelles1(n) {
-      showAktuelles1(slideIndex += n);
-    }
-
-    function showAktuelles1(n) {
-      var i;
-      var x = document.getElementsByClassName("aktuelles1");
-      if (n > x.length) {slideIndex = 1}
-      if (n < 1) {slideIndex = x.length}
-      for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none";
-      }
-      x[slideIndex-1].style.display = "block";
-    }
-    </script>
-    
-  </div>
-
-  <div class="w3-card-4 w3-margin w3-white"id="2">
-
-    <div class="w3-content w3-display-container">
-    <img class="aktuelles2" src="FFWeihe.JPG" style="width:100%">
-    <img class="aktuelles2" src="FFWeihe1.JPG" style="width:100%">
-    <img class="aktuelles2" src="FFWeihe2.JPG" style="width:100%">
-    <img class="aktuelles2" src="FFWeihe3.JPG" style="width:100%">
-    <img class="aktuelles2" src="FFWeihe4.JPG" style="width:100%">
-    <img class="aktuelles2" src="FFWeihe5.JPG" style="width:100%">
-    <img class="aktuelles2" src="FFWeihe6.JPG" style="width:100%">
-    <img class="aktuelles2" src="FFWeihe7.JPG" style="width:100%">
-    <img class="aktuelles2" src="FFWeihe8.JPG" style="width:100%">
-
-    <button class="w3-button w3-black w3-display-left" onclick="plusAktuelles2(-1)">&#10094;</button>
-    <button class="w3-button w3-black w3-display-right" onclick="plusAktuelles2(1)">&#10095;</button>
+      <h3><b>Die FF-Sellrain gratuliert</b></h3>
     </div>
     <div class="w3-container">
-      <h3><b>Segnung LAST Sellrain </b></h3>
-      <h5><span class="w3-opacity">Freitag 10 Juli 2020</span></h5>
-    </div>
-
-    <div class="w3-container">
-      <p>Am Freitag den 10.07.2020 wurde das neue Einsatzfahrzeug der FF-Sellrain durch Pfarrer Leopold gesegnet. </p>
+      <p>Die FF-Sellrain gratuliert zum 80isgten Geburtstag!</p>
       <div class="w3-row">
         <div class="w3-col m8 s12">
         </div>
         <div class="w3-col m4 w3-hide-small">
         </div>
       </div>
+    </div>
+  </div>
+
+  <!-- Blog entry -->
+ <div class="w3-card-4 w3-margin w3-white"id="2">
+
+    <div class="w3-content w3-display-container">
+      <img class="aktuelles2" src="auto.jpg" style="width:100%">
+      <img class="aktuelles2" src="auto1.jpeg" style="width:100%">
+      <img class="aktuelles2" src="auto2.jpeg" style="width:100%">
+    <button class="w3-button w3-black w3-display-left" onclick="plusAktuelles2(-1)">&#10094;</button>
+    <button class="w3-button w3-black w3-display-right" onclick="plusAktuelles2(1)">&#10095;</button>
+    </div>
+    <div class="w3-container">
+      <h3><b>Fuhrpark der FF-Sellrain</b></h3>
     </div>
     <script>
     var slideIndex = 1;
@@ -127,24 +93,32 @@ and is wrapped around the whole page content, except for the footer in this exam
       x[slideIndex-1].style.display = "block";
     }
     </script>
+    
   </div>
 
   <div class="w3-card-4 w3-margin w3-white"id="3">
 
     <div class="w3-content w3-display-container">
-    <img src="FFBriefmarke.jpg" style="width:100%">
+    <img class="aktuelles3" src="FFWeihe.JPG" style="width:100%">
+    <img class="aktuelles3" src="FFWeihe1.JPG" style="width:100%">
+    <img class="aktuelles3" src="FFWeihe2.JPG" style="width:100%">
+    <img class="aktuelles3" src="FFWeihe3.JPG" style="width:100%">
+    <img class="aktuelles3" src="FFWeihe4.JPG" style="width:100%">
+    <img class="aktuelles3" src="FFWeihe5.JPG" style="width:100%">
+    <img class="aktuelles3" src="FFWeihe6.JPG" style="width:100%">
+    <img class="aktuelles3" src="FFWeihe7.JPG" style="width:100%">
+    <img class="aktuelles3" src="FFWeihe8.JPG" style="width:100%">
+
+    <button class="w3-button w3-black w3-display-left" onclick="plusAktuelles3(-1)">&#10094;</button>
+    <button class="w3-button w3-black w3-display-right" onclick="plusAktuelles3(1)">&#10095;</button>
     </div>
     <div class="w3-container">
-      <h3><b>122 Jahre Freiwillige Feuerwehr Sellrain</b></h3>
+      <h3><b>Segnung LAST Sellrain </b></h3>
+      <h5><span class="w3-opacity">Freitag 10 Juli 2020</span></h5>
     </div>
+
     <div class="w3-container">
-      <p>Liebe Freundinnen und Freunde der FF Sellrain!</p>
-      <p>Am 19.05.2020 j&aumlhrt sich der Gr&uumlndungstag der FF Sellrain zum 122ten mal. F&uumlr dieses Jubil&aumlum haben wir &uumlber die Post AG eine eigene Briefmarke herausgebracht.
-        Diese kann im Inlandstarif f&uumlr Postkarten und Briefe verwendet werden bzw. dient auch als Erinnerung. Der Verkauf war urspr&uumlnglich zu den Feierlichkeiten im Juni angedacht.
-        Nun sollt ihr &uumlber diesen Weg die M&oumlglichkeit haben, ein solches Unikat zu erwerben - Nat&uumlrlich nur so lange der Vorrat reicht.</p>
-      <p>Kostenpunkt pro Marke EUR 2,50</p>
-      <p>(1/3 Nennwert - 1/3 Herstellung - 1/3 verbleibt der FF Sellrain).</p>
-      <p>Bei Interesse k&oumlnnt ihr die Marken bei der E-Mail Adresse <a href="mailto:sellrain@feuerwehr.tirol">sellrain&#64;feuerwehr.tirol</a> bestellen</p>
+      <p>Am Freitag den 10.07.2020 wurde das neue Einsatzfahrzeug der FF-Sellrain durch Pfarrer Leopold gesegnet. </p>
       <div class="w3-row">
         <div class="w3-col m8 s12">
         </div>
@@ -152,8 +126,29 @@ and is wrapped around the whole page content, except for the footer in this exam
         </div>
       </div>
     </div>
+    <script>
+    var slideIndex = 1;
+    showAktuelles3(slideIndex);
+
+    function plusAktuelles3(n) {
+      showAktuelles3(slideIndex += n);
+    }
+
+    function showAktuelles3(n) {
+      var i;
+      var x = document.getElementsByClassName("aktuelles3");
+      if (n > x.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = x.length}
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      x[slideIndex-1].style.display = "block";
+    }
+    </script>
   </div>
-  <hr>
+  
+</div>
+</div>
 </div>
 
 <!-- Introduction menu -->
@@ -166,6 +161,6 @@ and is wrapped around the whole page content, except for the footer in this exam
       <p>Alles was auserhalb der &Uumlbungen und Eins&aumltze in unseren Reihen passiert.</p>
     </div>
   </div><hr>
-
+</div>
 </body>
 </html>
