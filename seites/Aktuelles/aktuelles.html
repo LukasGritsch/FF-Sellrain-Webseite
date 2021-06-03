@@ -42,7 +42,55 @@ and is wrapped around the whole page content, except for the footer in this exam
 <!-- Blog entries -->
 <div class="w3-col l8 s12">
 
+
   <div class="w3-card-4 w3-margin w3-white"id="1">
+
+    <div class="w3-content w3-display-container">
+    <img class="aktuelles1" src="stroma.jpg" style="width:100%">
+    <img class="aktuelles1" src="stroma1.jpg" style="width:100%">
+    <img class="aktuelles1" src="stroma2.jpg" style="width:100%">
+    <img class="aktuelles1" src="stroma3.jpg" style="width:100%">
+    <img class="aktuelles1" src="stroma4.jpg" style="width:100%">
+
+    <button class="w3-button w3-black w3-display-left" onclick="plusAktuelles1(-1)">&#10094;</button>
+    <button class="w3-button w3-black w3-display-right" onclick="plusAktuelles1(1)">&#10095;</button>
+    </div>
+    <div class="w3-container">
+      <h3><b>&Uumlbergabe des Stromaggregats an die FF-Sellrain</b></h3>
+      <h5><span class="w3-opacity">Mittwoch 26 Mai 2021</span></h5>
+    </div>
+
+    <div class="w3-container">
+      <p>Am Mittwoch 26 Mai 2021 konnten wir unser neues Stromaggregat entgegennehmen. </p>
+      <div class="w3-row">
+        <div class="w3-col m8 s12">
+        </div>
+        <div class="w3-col m4 w3-hide-small">
+        </div>
+      </div>
+    </div>
+    <script>
+    var slideIndex = 1;
+    showAktuelles1(slideIndex);
+
+    function plusAktuelles1(n) {
+      showAktuelles1(slideIndex += n);
+    }
+
+    function showAktuelles1(n) {
+      var i;
+      var x = document.getElementsByClassName("aktuelles1");
+      if (n > x.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = x.length}
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      x[slideIndex-1].style.display = "block";
+    }
+    </script>
+  </div>
+
+  <div class="w3-card-4 w3-margin w3-white"id="2">
 
     <div class="w3-content w3-display-container">
     <img src="80er.jpeg" style="width:100%">
@@ -62,75 +110,23 @@ and is wrapped around the whole page content, except for the footer in this exam
   </div>
 
   <!-- Blog entry -->
- <div class="w3-card-4 w3-margin w3-white"id="2">
+ <div class="w3-card-4 w3-margin w3-white"id="3">
 
     <div class="w3-content w3-display-container">
-      <img class="aktuelles2" src="auto.jpg" style="width:100%">
-      <img class="aktuelles2" src="auto1.jpeg" style="width:100%">
-      <img class="aktuelles2" src="auto2.jpeg" style="width:100%">
-    <button class="w3-button w3-black w3-display-left" onclick="plusAktuelles2(-1)">&#10094;</button>
-    <button class="w3-button w3-black w3-display-right" onclick="plusAktuelles2(1)">&#10095;</button>
+      <img class="aktuelles3" src="auto.jpg" style="width:100%">
+      <img class="aktuelles3" src="auto1.jpeg" style="width:100%">
+      <img class="aktuelles3" src="auto2.jpeg" style="width:100%">
+    <button class="w3-button w3-black w3-display-left" onclick="plusAktuelles3(-1)">&#10094;</button>
+    <button class="w3-button w3-black w3-display-right" onclick="plusAktuelle32(1)">&#10095;</button>
     </div>
     <div class="w3-container">
       <h3><b>Fuhrpark der FF-Sellrain</b></h3>
     </div>
     <script>
     var slideIndex = 1;
-    showAktuelles2(slideIndex);
-
-    function plusAktuelles2(n) {
-      showAktuelles2(slideIndex += n);
-    }
-
-    function showAktuelles2(n) {
-      var i;
-      var x = document.getElementsByClassName("aktuelles2");
-      if (n > x.length) {slideIndex = 1}
-      if (n < 1) {slideIndex = x.length}
-      for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none";
-      }
-      x[slideIndex-1].style.display = "block";
-    }
-    </script>
-    
-  </div>
-
-  <div class="w3-card-4 w3-margin w3-white"id="3">
-
-    <div class="w3-content w3-display-container">
-    <img class="aktuelles3" src="FFWeihe.JPG" style="width:100%">
-    <img class="aktuelles3" src="FFWeihe1.JPG" style="width:100%">
-    <img class="aktuelles3" src="FFWeihe2.JPG" style="width:100%">
-    <img class="aktuelles3" src="FFWeihe3.JPG" style="width:100%">
-    <img class="aktuelles3" src="FFWeihe4.JPG" style="width:100%">
-    <img class="aktuelles3" src="FFWeihe5.JPG" style="width:100%">
-    <img class="aktuelles3" src="FFWeihe6.JPG" style="width:100%">
-    <img class="aktuelles3" src="FFWeihe7.JPG" style="width:100%">
-    <img class="aktuelles3" src="FFWeihe8.JPG" style="width:100%">
-
-    <button class="w3-button w3-black w3-display-left" onclick="plusAktuelles3(-1)">&#10094;</button>
-    <button class="w3-button w3-black w3-display-right" onclick="plusAktuelles3(1)">&#10095;</button>
-    </div>
-    <div class="w3-container">
-      <h3><b>Segnung LAST Sellrain </b></h3>
-      <h5><span class="w3-opacity">Freitag 10 Juli 2020</span></h5>
-    </div>
-
-    <div class="w3-container">
-      <p>Am Freitag den 10.07.2020 wurde das neue Einsatzfahrzeug der FF-Sellrain durch Pfarrer Leopold gesegnet. </p>
-      <div class="w3-row">
-        <div class="w3-col m8 s12">
-        </div>
-        <div class="w3-col m4 w3-hide-small">
-        </div>
-      </div>
-    </div>
-    <script>
-    var slideIndex = 1;
     showAktuelles3(slideIndex);
 
-    function plusAktuelles3(n) {
+    function plusAktuelles2(n) {
       showAktuelles3(slideIndex += n);
     }
 
@@ -145,8 +141,8 @@ and is wrapped around the whole page content, except for the footer in this exam
       x[slideIndex-1].style.display = "block";
     }
     </script>
+
   </div>
-  
 </div>
 </div>
 </div>
